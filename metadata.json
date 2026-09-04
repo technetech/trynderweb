@@ -1,0 +1,6 @@
+{
+  "name": "TRYNDER — High-Performance Social AI",
+  "description": "Landing page oficial de Trynder. Simulador de alto rendimiento con IA para dominar la conversación y el juego social.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

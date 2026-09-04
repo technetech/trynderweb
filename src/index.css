@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Syne", "Plus Jakarta Sans", sans-serif;
+  --font-mono: "Space Grotesk", monospace, sans-serif;
+  --color-trynder-yellow: #FFFF00;
+  --color-trynder-yellow-light: #FFFF66;
+  --color-trynder-yellow-dark: #E6E600;
+  --color-trynder-black: #000000;
+  --color-trynder-dark: #111111;
+  --color-trynder-card: #161616;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tag {
+  font-family: var(--font-mono);
+}
+
+/* Editorial Aesthetic Utilities */
+.editorial-badge {
+  display: inline-block;
+  background-color: #FFFF00;
+  color: #000000;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+.editorial-btn-black {
+  border: 2px solid #FFFFFF;
+  padding: 8px 24px;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  background-color: transparent;
+  color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+.editorial-btn-black:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.editorial-btn-yellow {
+  background-color: #FFFF00;
+  color: #000000;
+  padding: 16px 36px;
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.editorial-btn-yellow:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.4);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFFF00;
+}
+
+
