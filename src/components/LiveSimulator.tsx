@@ -239,14 +239,14 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h3 className="text-sm font-black text-black uppercase tracking-tight">
+                    <h3 className="text-sm font-black text-white uppercase tracking-tight">
                       {selectedPersona.name}, {selectedPersona.age}
                     </h3>
                     <span className="text-[9px] font-black px-1.5 py-0.5 bg-[#FFFF00] text-black uppercase">
                       {selectedPersona.archetype}
                     </span>
                   </div>
-                  <p className="text-[11px] text-zinc-500 font-medium">
+                  <p className="text-[11px] text-white font-medium">
                     {selectedPersona.profession} • En línea ahora
                   </p>
                 </div>
@@ -255,7 +255,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
               <button
                 id="reset-chat-button"
                 onClick={handleResetChat}
-                className="p-2 text-zinc-600 hover:text-[#FFFF00] hover:bg-zinc-900 border border-zinc-200 transition-colors cursor-pointer"
+                className="p-2 text-white hover:text-[#FFFF00] hover:bg-zinc-900 border border-zinc-200 transition-colors cursor-pointer"
                 title="Reiniciar chat"
               >
                 <RotateCcw className="w-4 h-4" />
@@ -277,13 +277,13 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                       className={`max-w-[82%] px-4 py-3 text-xs sm:text-sm leading-relaxed ${
                         isUser
                           ? 'bg-[#FFFF00] text-black font-bold shadow-md'
-                          : 'bg-zinc-100 text-zinc-200 border border-zinc-200'
+                          : 'bg-zinc-100 text-white border border-zinc-200'
                       }`}
                     >
                       <p>{m.text}</p>
                       <span
                         className={`text-[9px] mt-1 block text-right font-mono-tag ${
-                          isUser ? 'text-white/60 font-semibold' : 'text-zinc-500'
+                          isUser ? 'text-white/60 font-semibold' : 'text-white'
                         }`}
                       >
                         {m.time}
@@ -307,7 +307,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
 
             {/* Quick Suggestions / Prompt Buttons */}
             <div className="px-4 py-3 bg-[#111111] border-t border-zinc-200">
-              <div className="text-[10px] font-black text-zinc-600 uppercase tracking-widest mb-2 flex items-center gap-1.5">
+              <div className="text-[10px] font-black text-white uppercase tracking-widest mb-2 flex items-center gap-1.5">
                 <Sparkles className="w-3 h-3 text-[#FFFF00]" />
                 Abridores tácticos de prueba:
               </div>
@@ -319,10 +319,10 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                     disabled={isTyping}
                     className={`text-xs px-3 py-1.5 border text-left transition-all truncate max-w-full cursor-pointer ${
                       sp.type === 'alpha'
-                        ? 'bg-white hover:bg-zinc-900 text-zinc-200 border-zinc-700 hover:border-[#FFFF00]'
+                        ? 'bg-transparent hover:bg-zinc-900 text-white border-zinc-700 hover:border-[#FFFF00]'
                         : sp.type === 'simp'
                         ? 'bg-red-950/20 text-red-300 border-red-900/40 hover:bg-red-950/40'
-                        : 'bg-white text-zinc-600 border-zinc-200 hover:text-zinc-200'
+                        : 'bg-transparent text-white border-zinc-200 hover:text-white'
                     }`}
                   >
                     <span className="font-bold mr-1.5">
@@ -350,7 +350,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                   onChange={(e) => setInputText(e.target.value)}
                   placeholder={`Escribe tu mensaje para ${selectedPersona.name}...`}
                   disabled={isTyping}
-                  className="flex-1 bg-[#111111] border border-zinc-700 focus:border-[#FFFF00] px-4 py-3 text-xs sm:text-sm text-black placeholder-zinc-500 focus:outline-none transition-colors"
+                  className="flex-1 bg-[#111111] border border-zinc-700 focus:border-[#FFFF00] px-4 py-3 text-xs sm:text-sm text-white placeholder-zinc-500 focus:outline-none transition-colors"
                 />
                 <button
                   id="simulator-send-btn"
@@ -375,7 +375,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
               </div>
 
               <div className="flex items-center justify-between mb-4">
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                <span className="text-[10px] font-black uppercase tracking-widest text-white">
                   Radar de Calibración
                 </span>
                 <span
@@ -393,10 +393,10 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
 
               {/* Big Score Display */}
               <div className="flex items-baseline gap-4 mb-4">
-                <div className="text-5xl font-black text-black font-display">
+                <div className="text-5xl font-black text-white font-display">
                   {currentFeedback.score}
                 </div>
-                <div className="text-xs font-bold uppercase text-zinc-500 tracking-wider">
+                <div className="text-xs font-bold uppercase text-white tracking-wider">
                   / 100 <span className="text-[#FFFF00] font-black">Aura Points</span>
                 </div>
               </div>
@@ -427,28 +427,28 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                   ) : (
                     <Zap className="w-4 h-4 text-[#FFFF00] shrink-0" />
                   )}
-                  <h4 className="text-xs font-black uppercase text-black tracking-wider">
+                  <h4 className="text-xs font-black uppercase text-white tracking-wider">
                     {currentFeedback.title}
                   </h4>
                 </div>
-                <p className="text-xs text-zinc-600 leading-relaxed font-medium">
+                <p className="text-xs text-white leading-relaxed font-medium">
                   {currentFeedback.description}
                 </p>
               </div>
 
               {/* Persona Archetype Info */}
               <div className="mt-6 pt-6 border-t border-zinc-200">
-                <h5 className="text-[10px] font-black uppercase text-zinc-500 tracking-widest mb-2">
+                <h5 className="text-[10px] font-black uppercase text-white tracking-widest mb-2">
                   Ficha de {selectedPersona.name}
                 </h5>
-                <p className="text-xs text-zinc-600 italic mb-3 font-medium">
+                <p className="text-xs text-white italic mb-3 font-medium">
                   "{selectedPersona.bio}"
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {selectedPersona.badges.map((b, i) => (
                     <span
                       key={i}
-                      className="px-2 py-0.5 text-[10px] font-black uppercase bg-white text-zinc-700 border border-zinc-200"
+                      className="px-2 py-0.5 text-[10px] font-black uppercase bg-transparent text-white border border-zinc-200"
                     >
                       {b}
                     </span>
@@ -463,10 +463,10 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
               <div className="inline-block bg-[#FFFF00] text-black text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
                 Acceso Ilimitado
               </div>
-              <h4 className="text-xl font-black text-black font-display uppercase tracking-tight">
+              <h4 className="text-xl font-black text-white font-display uppercase tracking-tight">
                 ¿Listo para dominar cada interacción?
               </h4>
-              <p className="text-xs sm:text-sm text-zinc-600 font-medium">
+              <p className="text-xs sm:text-sm text-white font-medium">
                 Desbloquea todos los arquetipos, notas de voz simuladas, modo "Chica difícil" y auditoría completa de tus conversaciones.
               </p>
               

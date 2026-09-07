@@ -21,14 +21,14 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenAppClick }) => {
             Tu Aura Empieza Aquí
           </div>
 
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-black font-display uppercase tracking-tight leading-[1.1] mb-6 italic">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white font-display uppercase tracking-tight leading-[1.1] mb-6 italic">
             Deja de sobrepensar.{' '}
             <span className="text-[#FFFF00] not-italic block mt-1">
               Empieza a dominar la conversación.
             </span>
           </h2>
 
-          <p className="text-base sm:text-lg text-zinc-700 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+          <p className="text-base sm:text-lg text-white max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
             No esperes a estar frente a la mujer que te gusta para descubrir qué decir. Entrena en Trynder, elimina los nervios y llega a cada interacción con carisma automático y calibrado.
           </p>
 
@@ -45,7 +45,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenAppClick }) => {
           </div>
 
           {/* Reassurance points */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs font-black uppercase tracking-wider text-zinc-600">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs font-black uppercase tracking-wider text-white">
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-[#FFFF00]" />
               <span>Acceso Inmediato</span>

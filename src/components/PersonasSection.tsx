@@ -61,7 +61,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
                         ? 'bg-red-500 text-black'
                         : persona.difficulty === 'Avanzado'
                         ? 'bg-[#FFFF00] text-black'
-                        : 'bg-white text-zinc-700 border border-zinc-200'
+                        : 'bg-transparent text-white border border-zinc-200'
                     }`}
                   >
                     {persona.difficulty}
@@ -78,10 +78,10 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
 
                 {/* Name & Profession overlay */}
                 <div className="absolute bottom-3 left-4 right-4">
-                  <h3 className="text-xl font-black text-black font-display uppercase tracking-tight">
+                  <h3 className="text-xl font-black text-white font-display uppercase tracking-tight">
                     {persona.name}, {persona.age}
                   </h3>
-                  <p className="text-xs font-semibold text-zinc-600">
+                  <p className="text-xs font-semibold text-white">
                     {persona.profession}
                   </p>
                 </div>
@@ -93,7 +93,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
                   <p className="text-[11px] font-black text-[#FFFF00] uppercase tracking-wider">
                     {persona.archetype}
                   </p>
-                  <p className="text-xs text-zinc-600 line-clamp-2 leading-relaxed font-medium">
+                  <p className="text-xs text-white line-clamp-2 leading-relaxed font-medium">
                     "{persona.bio}"
                   </p>
                   
@@ -102,7 +102,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
                     {persona.badges.map((b, i) => (
                       <span
                         key={i}
-                        className="px-2 py-0.5 text-[9px] font-bold uppercase bg-white text-zinc-700 border border-zinc-200"
+                        className="px-2 py-0.5 text-[9px] font-bold uppercase bg-transparent text-white border border-zinc-200"
                       >
                         {b}
                       </span>
@@ -112,10 +112,10 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
 
                 {/* Card Sample Chat Pill */}
                 <div className="bg-white border border-zinc-200 p-3 space-y-1">
-                  <div className="text-[9px] uppercase font-black tracking-widest text-zinc-500">
+                  <div className="text-[9px] uppercase font-black tracking-widest text-white">
                     Banter de prueba:
                   </div>
-                  <p className="text-xs text-zinc-700 italic line-clamp-2 font-medium">
+                  <p className="text-xs text-white italic line-clamp-2 font-medium">
                     "{persona.chatSnippet.ai}"
                   </p>
                 </div>
@@ -141,10 +141,10 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
               <Zap className="w-6 h-6 fill-[#FFFF00]" />
             </div>
             <div>
-              <h4 className="text-base font-black uppercase text-black tracking-tight">
+              <h4 className="text-base font-black uppercase text-white tracking-tight">
                 ¿Buscas retos más complejos o situaciones específicas?
               </h4>
-              <p className="text-xs sm:text-sm text-zinc-600 font-medium">
+              <p className="text-xs sm:text-sm text-white font-medium">
                 Trynder añade nuevos arquetipos cada semana: perfiles de alto estatus, retos directos y pruebas de marco de nivel élite.
               </p>
             </div>
@@ -153,7 +153,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
           <button
             id="explore-all-personas-cta"
             onClick={onOpenAppClick}
-            className="shrink-0 px-6 py-3 text-xs font-black uppercase tracking-wider text-black bg-white hover:bg-white hover:text-black border border-zinc-600 transition-colors flex items-center gap-2 cursor-pointer"
+            className="shrink-0 px-6 py-3 text-xs font-black uppercase tracking-wider text-white bg-transparent hover:bg-transparent hover:text-white border border-zinc-600 transition-colors flex items-center gap-2 cursor-pointer"
           >
             <span>Ver todos los perfiles</span>
             <ArrowRight className="w-3.5 h-3.5" />

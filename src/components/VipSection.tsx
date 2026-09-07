@@ -29,19 +29,19 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
           <div className="bg-[#111111] border-2 border-zinc-200 p-8 flex flex-col justify-between">
             <div className="space-y-6">
               <div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500 font-mono-tag">
+                <span className="text-[10px] font-black uppercase tracking-widest text-white font-mono-tag">
                   Tier 01 // Gratuito
                 </span>
-                <h3 className="text-2xl font-black text-black font-display uppercase mt-1">
+                <h3 className="text-2xl font-black text-white font-display uppercase mt-1">
                   Trynder Free
                 </h3>
                 <div className="mt-4 flex items-baseline gap-2">
-                  <span className="text-4xl font-black text-black font-display">$0</span>
-                  <span className="text-xs text-zinc-600 font-bold uppercase tracking-wider">/ para siempre</span>
+                  <span className="text-4xl font-black text-white font-display">$0</span>
+                  <span className="text-xs text-white font-bold uppercase tracking-wider">/ para siempre</span>
                 </div>
               </div>
 
-              <ul className="space-y-3 text-xs sm:text-sm text-zinc-700 font-medium">
+              <ul className="space-y-3 text-xs sm:text-sm text-white font-medium">
                 <li className="flex items-center gap-2.5">
                   <Check className="w-4 h-4 text-[#FFFF00] shrink-0" />
                   <span>Acceso a 3 arquetipos básicos (Sabine, Joséphine)</span>
@@ -54,11 +54,11 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
                   <Check className="w-4 h-4 text-[#FFFF00] shrink-0" />
                   <span>Puntuación de Aura básica por sesión</span>
                 </li>
-                <li className="flex items-center gap-2.5 text-zinc-600">
+                <li className="flex items-center gap-2.5 text-white">
                   <span className="w-4 h-4 text-center font-bold">✕</span>
                   <span>Sin modo "Chica Difícil / Filtro Alto"</span>
                 </li>
-                <li className="flex items-center gap-2.5 text-zinc-600">
+                <li className="flex items-center gap-2.5 text-white">
                   <span className="w-4 h-4 text-center font-bold">✕</span>
                   <span>Sin notas de voz simuladas ni auditoría de capturas</span>
                 </li>
@@ -69,7 +69,7 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
               <button
                 id="pricing-free-cta"
                 onClick={onOpenAppClick}
-                className="w-full py-3.5 bg-white hover:bg-zinc-800 text-black border border-zinc-700 font-black text-xs uppercase tracking-wider transition-colors cursor-pointer"
+                className="w-full py-3.5 bg-transparent hover:bg-zinc-800 text-white border border-zinc-700 font-black text-xs uppercase tracking-wider transition-colors cursor-pointer"
               >
                 Empezar Gratis
               </button>
@@ -90,27 +90,27 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
                   <span className="text-[10px] font-black uppercase tracking-widest text-[#FFFF00] font-mono-tag">
                     Tier 02 // Ilimitado
                   </span>
-                  <span className="px-2 py-0.5 text-[9px] font-black uppercase bg-[#8b5cf6] text-black">
+                  <span className="px-2 py-0.5 text-[9px] font-black uppercase bg-[#8b5cf6] text-white">
                     VIP
                   </span>
                 </div>
-                <h3 className="text-2xl font-black text-black font-display uppercase mt-1">
+                <h3 className="text-2xl font-black text-white font-display uppercase mt-1">
                   Trynder Pro VIP
                 </h3>
                 <div className="mt-4 flex items-baseline gap-2">
                   <span className="text-4xl font-black text-[#FFFF00] font-display">$9.99</span>
-                  <span className="text-xs text-zinc-600 font-bold uppercase tracking-wider">/ mes (cancela cuando quieras)</span>
+                  <span className="text-xs text-white font-bold uppercase tracking-wider">/ mes (cancela cuando quieras)</span>
                 </div>
               </div>
 
-              <ul className="space-y-3 text-xs sm:text-sm text-zinc-200 font-medium">
+              <ul className="space-y-3 text-xs sm:text-sm text-white font-medium">
                 <li className="flex items-center gap-2.5">
                   <Check className="w-4 h-4 text-[#FFFF00] shrink-0" />
-                  <span className="font-bold text-black">IAs ilimitadas: Sofía, Yaritza, Lison y 12 más</span>
+                  <span className="font-bold text-white">IAs ilimitadas: Sofía, Yaritza, Lison y 12 más</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Check className="w-4 h-4 text-[#FFFF00] shrink-0" />
-                  <span className="font-bold text-black">Chats ilimitados 24/7 sin cortes</span>
+                  <span className="font-bold text-white">Chats ilimitados 24/7 sin cortes</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Check className="w-4 h-4 text-[#FFFF00] shrink-0" />

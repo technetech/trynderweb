@@ -42,7 +42,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
           initial={{ opacity: 0, scale: 0.95, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 15 }}
-          className="relative w-full max-w-lg bg-[#111111] border-2 border-[#FFFF00] p-6 sm:p-8 shadow-[0_0_50px_rgba(255,255,0,0.25)] z-10 overflow-hidden text-black"
+          className="relative w-full max-w-lg bg-[#111111] border-2 border-[#FFFF00] p-6 sm:p-8 shadow-[0_0_50px_rgba(255,255,0,0.25)] z-10 overflow-hidden text-white"
         >
           {/* Background Glow */}
           <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFFF00]/10 blur-3xl rounded-full pointer-events-none" />
@@ -50,7 +50,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute top-5 right-5 p-1.5 text-zinc-600 hover:text-white hover:bg-black transition-colors"
+            className="absolute top-5 right-5 p-1.5 text-white hover:text-white hover:bg-black transition-colors"
           >
             <X className="w-5 h-5" />
           </button>
@@ -62,10 +62,10 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
               </div>
 
               <div>
-                <h3 className="text-2xl sm:text-3xl font-black text-black font-display uppercase tracking-tight italic">
+                <h3 className="text-2xl sm:text-3xl font-black text-white font-display uppercase tracking-tight italic">
                   Estás a un paso de dominar la conversación
                 </h3>
-                <p className="text-xs sm:text-sm text-zinc-700 mt-2 leading-relaxed font-medium">
+                <p className="text-xs sm:text-sm text-white mt-2 leading-relaxed font-medium">
                   El botón de enlace a la webapp está configurado. Puedes probar el simulador en vivo ahora mismo o registrarte para acceso prioritario con el pase VIP.
                 </p>
               </div>
@@ -76,18 +76,18 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                   onClose();
                   onStartSimulation();
                 }}
-                className="w-full py-3.5 px-4 bg-white border border-zinc-700 hover:border-[#FFFF00] text-zinc-200 hover:text-white font-black text-xs uppercase tracking-wider flex items-center justify-between transition-colors"
+                className="w-full py-3.5 px-4 bg-transparent border border-zinc-700 hover:border-[#FFFF00] text-white hover:text-white font-black text-xs uppercase tracking-wider flex items-center justify-between transition-colors"
               >
                 <div className="flex items-center gap-2">
                   <Zap className="w-4 h-4 text-[#FFFF00] fill-[#FFFF00]" />
                   <span>Ir directo al simulador interactivo</span>
                 </div>
-                <ArrowRight className="w-4 h-4 text-zinc-600" />
+                <ArrowRight className="w-4 h-4 text-white" />
               </button>
 
               <div className="relative flex py-1 items-center">
                 <div className="flex-grow border-t border-zinc-200" />
-                <span className="flex-shrink mx-4 text-[10px] font-black uppercase text-zinc-500 font-mono-tag">
+                <span className="flex-shrink mx-4 text-[10px] font-black uppercase text-white font-mono-tag">
                   o recibe tu enlace de acceso
                 </span>
                 <div className="flex-grow border-t border-zinc-200" />
@@ -101,7 +101,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Tu correo electrónico..."
-                  className="w-full bg-white border border-zinc-700 focus:border-[#FFFF00] px-4 py-3.5 text-xs sm:text-sm text-black placeholder-zinc-500 focus:outline-none transition-colors"
+                  className="w-full bg-transparent border border-zinc-700 focus:border-[#FFFF00] px-4 py-3.5 text-xs sm:text-sm text-white placeholder-zinc-500 focus:outline-none transition-colors"
                 />
 
                 {/* Primary Button */}
@@ -114,7 +114,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                 </button>
               </form>
 
-              <p className="text-[10px] text-zinc-500 text-center font-mono-tag uppercase">
+              <p className="text-[10px] text-white text-center font-mono-tag uppercase">
                 🔒 Cero spam. 100% privado y confidencial.
               </p>
             </div>
@@ -124,12 +124,12 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                 <CheckCircle2 className="w-8 h-8 stroke-[2.5]" />
               </div>
 
-              <h3 className="text-2xl font-black text-black font-display uppercase italic">
+              <h3 className="text-2xl font-black text-white font-display uppercase italic">
                 ¡Pase VIP Activado!
               </h3>
               
-              <p className="text-xs sm:text-sm text-zinc-700 max-w-sm mx-auto leading-relaxed font-medium">
-                Hemos registrado tu solicitud para <strong className="text-black">{email}</strong>. Puedes empezar a practicar de inmediato en nuestro simulador en vivo.
+              <p className="text-xs sm:text-sm text-white max-w-sm mx-auto leading-relaxed font-medium">
+                Hemos registrado tu solicitud para <strong className="text-white">{email}</strong>. Puedes empezar a practicar de inmediato en nuestro simulador en vivo.
               </p>
 
               <div className="pt-4">

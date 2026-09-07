@@ -111,14 +111,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
           {/* Top Right Metric Badge */}
           <div className="absolute top-6 right-6 sm:top-8 sm:right-8 text-right z-20">
             <div className="text-4xl sm:text-5xl font-black text-[#FFFF00] tracking-tight">98%</div>
-            <div className="text-[9px] sm:text-[10px] font-bold uppercase text-zinc-600 tracking-tighter leading-tight">
+            <div className="text-[9px] sm:text-[10px] font-bold uppercase text-white tracking-tighter leading-tight">
               Tasa de mejora <br /> percibida
             </div>
           </div>
 
           {/* Subdued Editorial Watermark */}
           <div className="absolute bottom-10 left-[-40px] rotate-90 hidden sm:block pointer-events-none select-none">
-            <span className="text-[60px] font-black text-black opacity-5 tracking-tighter">
+            <span className="text-[60px] font-black text-white opacity-5 tracking-tighter">
               CONVERSATION
             </span>
           </div>
@@ -133,7 +133,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
                   {profile.name[0]}
                 </div>
                 <div>
-                  <div className="text-xs font-black text-black uppercase tracking-tight">
+                  <div className="text-xs font-black text-white uppercase tracking-tight">
                     {profile.name} (Advanced)
                   </div>
                   <div className="text-[9px] text-[#FFFF00] font-bold tracking-wider uppercase flex items-center gap-1">
@@ -142,7 +142,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
                   </div>
                 </div>
               </div>
-              <span className="px-2 py-0.5 text-[9px] font-black uppercase bg-[#8b5cf6] text-black">
+              <span className="px-2 py-0.5 text-[9px] font-black uppercase bg-[#8b5cf6] text-white">
                 VIP
               </span>
             </div>
@@ -185,7 +185,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
                   )}
 
                   {/* Profile Info Overlay */}
-                  <div className="absolute bottom-3 left-3 right-3 text-black z-10">
+                  <div className="absolute bottom-3 left-3 right-3 text-white z-10">
                     <div className="flex items-baseline justify-between">
                       <h2 className="text-xl font-black uppercase tracking-tight font-display">
                         {profile.name}, {profile.age}
@@ -194,7 +194,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
                         {profile.archetype}
                       </span>
                     </div>
-                    <p className="text-xs text-zinc-700 font-medium">
+                    <p className="text-xs text-white font-medium">
                       {profile.profession}
                     </p>
                   </div>
@@ -215,7 +215,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
               <button
                 id="preview-pass-button"
                 onClick={() => handleAction('pass')}
-                className="flex-1 py-2.5 bg-zinc-200 hover:bg-zinc-700 text-zinc-700 font-black text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                className="flex-1 py-2.5 bg-zinc-200 hover:bg-zinc-700 text-white font-black text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
               >
                 <X className="w-4 h-4" />
                 <span>Pasar</span>

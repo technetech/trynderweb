@@ -64,20 +64,20 @@ export const HowItWorks: React.FC<HowItWorksProps> = () => {
                   <span className="text-4xl font-black text-[#FFFF00] font-display">
                     {s.num}
                   </span>
-                  <span className="text-[9px] font-black uppercase tracking-widest px-2 py-0.5 bg-white text-zinc-600 border border-zinc-200">
+                  <span className="text-[9px] font-black uppercase tracking-widest px-2 py-0.5 bg-transparent text-white border border-zinc-200">
                     {s.tag}
                   </span>
                 </div>
 
-                <h3 className="text-base sm:text-lg font-black uppercase text-black mb-3 tracking-tight">
+                <h3 className="text-base sm:text-lg font-black uppercase text-white mb-3 tracking-tight">
                   {s.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-zinc-600 leading-relaxed font-medium">
+                <p className="text-xs sm:text-sm text-white leading-relaxed font-medium">
                   {s.desc}
                 </p>
               </div>
 
-              <div className="mt-8 pt-4 border-t border-zinc-200 flex items-center gap-2 text-[10px] font-black uppercase tracking-wider text-zinc-500">
+              <div className="mt-8 pt-4 border-t border-zinc-200 flex items-center gap-2 text-[10px] font-black uppercase tracking-wider text-white">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#FFFF00]" />
                 <span>Simulación activa</span>
               </div>

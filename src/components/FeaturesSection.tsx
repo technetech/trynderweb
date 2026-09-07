@@ -53,18 +53,18 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
                   <span className="text-[10px] font-black uppercase text-[#FFFF00] tracking-widest block mb-1">
                     {feat.tag}
                   </span>
-                  <h3 className="text-2xl font-black text-black font-display uppercase tracking-tight mb-2">
+                  <h3 className="text-2xl font-black text-white font-display uppercase tracking-tight mb-2">
                     {feat.title}
                   </h3>
-                  <p className="text-sm font-semibold text-zinc-700 mb-3">
+                  <p className="text-sm font-semibold text-white mb-3">
                     {feat.subtitle}
                   </p>
-                  <p className="text-sm text-zinc-600 leading-relaxed font-medium">
+                  <p className="text-sm text-white leading-relaxed font-medium">
                     {feat.description}
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-zinc-200 flex items-center justify-between text-xs font-black uppercase text-zinc-600 group-hover:text-white transition-colors">
+                <div className="pt-6 mt-6 border-t border-zinc-200 flex items-center justify-between text-xs font-black uppercase text-white group-hover:text-white transition-colors">
                   <span>Módulo de Calibración</span>
                   <span className="text-[#FFFF00]">● Trynder Core</span>
                 </div>
@@ -79,10 +79,10 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
             <div className="inline-block bg-black text-white text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
               Diagnóstico Comparativo
             </div>
-            <h3 className="text-2xl sm:text-3xl font-black text-black font-display uppercase italic">
+            <h3 className="text-2xl sm:text-3xl font-black text-white font-display uppercase italic">
               La diferencia entre improvisar y entrenar
             </h3>
-            <p className="text-xs sm:text-sm text-zinc-600 font-medium">
+            <p className="text-xs sm:text-sm text-white font-medium">
               Mira qué ocurre cuando cambias la frustración tradicional por la práctica deliberada en Trynder.
             </p>
           </div>
@@ -95,7 +95,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
                 <X className="w-4 h-4 stroke-[3]" />
                 <span>Sin Trynder (El método que no funciona)</span>
               </div>
-              <ul className="space-y-3 text-xs sm:text-sm text-zinc-600 font-medium">
+              <ul className="space-y-3 text-xs sm:text-sm text-white font-medium">
                 <li className="flex items-start gap-2.5">
                   <span className="text-red-500 font-black shrink-0">✕</span>
                   <span>Mandas "hola qué tal tu día" y compites con otros 50 mensajes idénticos en su bandeja.</span>
@@ -121,7 +121,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
                 <Check className="w-4 h-4 stroke-[3]" />
                 <span>Con Trynder (Mentalidad de Calibración & Aura)</span>
               </div>
-              <ul className="space-y-3 text-xs sm:text-sm text-zinc-200 font-medium">
+              <ul className="space-y-3 text-xs sm:text-sm text-white font-medium">
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#FFFF00] font-black shrink-0">✓</span>
                   <span>Abres con observaciones ingeniosas que provocan curiosidad inmediata y risas.</span>
