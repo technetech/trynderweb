@@ -162,7 +162,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
   };
 
   return (
-    <section id="simulador" className="py-20 lg:py-28 bg-black relative border-t border-zinc-800">
+    <section id="simulador" className="py-20 lg:py-28 bg-white relative border-t border-zinc-200">
       
       {/* Subtle background aura glow */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-[#FFFF00]/5 blur-[160px] rounded-full pointer-events-none -z-10" />
@@ -171,14 +171,14 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Laboratorio de Conversación en Vivo
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white font-display uppercase italic">
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
             Pon a prueba tu labia en el simulador
           </h2>
-          <p className="text-zinc-400 text-base sm:text-lg">
-            Elige una de las IAs de Trynder, lanza un abridor y mira cómo responde en tiempo real con análisis de <strong className="text-white font-bold">Aura y Calibración</strong>.
+          <p className="text-zinc-600 text-base sm:text-lg">
+            Elige una de las IAs de Trynder, lanza un abridor y mira cómo responde en tiempo real con análisis de <strong className="text-black font-bold">Aura y Calibración</strong>.
           </p>
         </div>
 
@@ -193,8 +193,8 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                 onClick={() => handleSelectPersona(p)}
                 className={`flex items-center gap-3 px-4 py-2 border transition-all cursor-pointer ${
                   isSelected
-                    ? 'bg-[#FFFF00] text-black border-[#FFFF00] shadow-[0_0_15px_rgba(255,255,0,0.3)]'
-                    : 'bg-[#111111] text-zinc-400 border-zinc-800 hover:border-zinc-700 hover:text-white'
+                    ? 'bg-[#FFFF00] text-white border-[#FFFF00] shadow-[0_0_15px_rgba(255,255,0,0.3)]'
+                    : 'bg-[#111111] text-zinc-600 border-zinc-200 hover:border-zinc-700 hover:text-white'
                 }`}
               >
                 <img
@@ -205,12 +205,12 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                 />
                 <div className="text-left">
                   <div className="flex items-center gap-1.5">
-                    <span className={`text-xs font-black uppercase ${isSelected ? 'text-black' : 'text-white'}`}>
+                    <span className={`text-xs font-black uppercase ${isSelected ? 'text-white' : 'text-black'}`}>
                       {p.name}, {p.age}
                     </span>
-                    {isSelected && <span className="w-1.5 h-1.5 rounded-full bg-black" />}
+                    {isSelected && <span className="w-1.5 h-1.5 rounded-full bg-white" />}
                   </div>
-                  <span className={`text-[10px] block font-medium ${isSelected ? 'text-black/70' : 'text-zinc-500'}`}>
+                  <span className={`text-[10px] block font-medium ${isSelected ? 'text-white/70' : 'text-zinc-500'}`}>
                     {p.profession}
                   </span>
                 </div>
@@ -223,10 +223,10 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Left: Chat Simulator Window (mimics mobile chat) */}
-          <div className="lg:col-span-7 bg-[#111111] border-2 border-zinc-800 shadow-2xl flex flex-col h-[580px]">
+          <div className="lg:col-span-7 bg-[#111111] border-2 border-zinc-200 shadow-2xl flex flex-col h-[580px]">
             
             {/* Simulator Header */}
-            <div className="px-5 py-4 bg-black border-b border-zinc-800 flex items-center justify-between">
+            <div className="px-5 py-4 bg-white border-b border-zinc-200 flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="relative">
                   <img
@@ -239,10 +239,10 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h3 className="text-sm font-black text-white uppercase tracking-tight">
+                    <h3 className="text-sm font-black text-black uppercase tracking-tight">
                       {selectedPersona.name}, {selectedPersona.age}
                     </h3>
-                    <span className="text-[9px] font-black px-1.5 py-0.5 bg-[#FFFF00] text-black uppercase">
+                    <span className="text-[9px] font-black px-1.5 py-0.5 bg-[#FFFF00] text-white uppercase">
                       {selectedPersona.archetype}
                     </span>
                   </div>
@@ -255,7 +255,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
               <button
                 id="reset-chat-button"
                 onClick={handleResetChat}
-                className="p-2 text-zinc-400 hover:text-[#FFFF00] hover:bg-zinc-900 border border-zinc-800 transition-colors cursor-pointer"
+                className="p-2 text-zinc-600 hover:text-[#FFFF00] hover:bg-zinc-900 border border-zinc-200 transition-colors cursor-pointer"
                 title="Reiniciar chat"
               >
                 <RotateCcw className="w-4 h-4" />
@@ -263,7 +263,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
             </div>
 
             {/* Chat Body Messages */}
-            <div className="flex-1 overflow-y-auto p-5 space-y-4 bg-black">
+            <div className="flex-1 overflow-y-auto p-5 space-y-4 bg-white">
               {messages.map((m) => {
                 const isUser = m.sender === 'user';
                 return (
@@ -276,14 +276,14 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                     <div
                       className={`max-w-[82%] px-4 py-3 text-xs sm:text-sm leading-relaxed ${
                         isUser
-                          ? 'bg-[#FFFF00] text-black font-bold shadow-md'
-                          : 'bg-zinc-900 text-zinc-200 border border-zinc-800'
+                          ? 'bg-[#FFFF00] text-white font-bold shadow-md'
+                          : 'bg-zinc-100 text-zinc-200 border border-zinc-200'
                       }`}
                     >
                       <p>{m.text}</p>
                       <span
                         className={`text-[9px] mt-1 block text-right font-mono-tag ${
-                          isUser ? 'text-black/60 font-semibold' : 'text-zinc-500'
+                          isUser ? 'text-white/60 font-semibold' : 'text-zinc-500'
                         }`}
                       >
                         {m.time}
@@ -296,7 +296,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
               {/* Typing Indicator */}
               {isTyping && (
                 <div className="flex justify-start">
-                  <div className="bg-zinc-900 border border-zinc-800 px-4 py-3 flex items-center gap-1.5">
+                  <div className="bg-zinc-100 border border-zinc-200 px-4 py-3 flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-[#FFFF00] animate-bounce [animation-delay:-0.3s]" />
                     <span className="w-2 h-2 rounded-full bg-[#FFFF00] animate-bounce [animation-delay:-0.15s]" />
                     <span className="w-2 h-2 rounded-full bg-[#FFFF00] animate-bounce" />
@@ -306,8 +306,8 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
             </div>
 
             {/* Quick Suggestions / Prompt Buttons */}
-            <div className="px-4 py-3 bg-[#111111] border-t border-zinc-800">
-              <div className="text-[10px] font-black text-zinc-400 uppercase tracking-widest mb-2 flex items-center gap-1.5">
+            <div className="px-4 py-3 bg-[#111111] border-t border-zinc-200">
+              <div className="text-[10px] font-black text-zinc-600 uppercase tracking-widest mb-2 flex items-center gap-1.5">
                 <Sparkles className="w-3 h-3 text-[#FFFF00]" />
                 Abridores tácticos de prueba:
               </div>
@@ -319,10 +319,10 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                     disabled={isTyping}
                     className={`text-xs px-3 py-1.5 border text-left transition-all truncate max-w-full cursor-pointer ${
                       sp.type === 'alpha'
-                        ? 'bg-black hover:bg-zinc-900 text-zinc-200 border-zinc-700 hover:border-[#FFFF00]'
+                        ? 'bg-white hover:bg-zinc-900 text-zinc-200 border-zinc-700 hover:border-[#FFFF00]'
                         : sp.type === 'simp'
                         ? 'bg-red-950/20 text-red-300 border-red-900/40 hover:bg-red-950/40'
-                        : 'bg-black text-zinc-400 border-zinc-800 hover:text-zinc-200'
+                        : 'bg-white text-zinc-600 border-zinc-200 hover:text-zinc-200'
                     }`}
                   >
                     <span className="font-bold mr-1.5">
@@ -335,7 +335,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
             </div>
 
             {/* Chat Input Bar */}
-            <div className="p-3.5 bg-black border-t border-zinc-800">
+            <div className="p-3.5 bg-white border-t border-zinc-200">
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -350,13 +350,13 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                   onChange={(e) => setInputText(e.target.value)}
                   placeholder={`Escribe tu mensaje para ${selectedPersona.name}...`}
                   disabled={isTyping}
-                  className="flex-1 bg-[#111111] border border-zinc-700 focus:border-[#FFFF00] px-4 py-3 text-xs sm:text-sm text-white placeholder-zinc-500 focus:outline-none transition-colors"
+                  className="flex-1 bg-[#111111] border border-zinc-700 focus:border-[#FFFF00] px-4 py-3 text-xs sm:text-sm text-black placeholder-zinc-500 focus:outline-none transition-colors"
                 />
                 <button
                   id="simulator-send-btn"
                   type="submit"
                   disabled={isTyping || !inputText.trim()}
-                  className="px-5 py-3 bg-[#FFFF00] text-black hover:scale-105 disabled:opacity-40 transition-all font-black uppercase text-xs cursor-pointer flex items-center gap-1"
+                  className="px-5 py-3 bg-[#FFFF00] text-white hover:scale-105 disabled:opacity-40 transition-all font-black uppercase text-xs cursor-pointer flex items-center gap-1"
                 >
                   <Send className="w-4 h-4" />
                 </button>
@@ -369,7 +369,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
           <div className="lg:col-span-5 space-y-6">
             
             {/* Aura Card */}
-            <div className="bg-[#111111] border-2 border-zinc-800 p-6 shadow-xl relative overflow-hidden">
+            <div className="bg-[#111111] border-2 border-zinc-200 p-6 shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 p-6 opacity-5 pointer-events-none">
                 <Flame className="w-36 h-36 text-[#FFFF00]" />
               </div>
@@ -393,7 +393,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
 
               {/* Big Score Display */}
               <div className="flex items-baseline gap-4 mb-4">
-                <div className="text-5xl font-black text-white font-display">
+                <div className="text-5xl font-black text-black font-display">
                   {currentFeedback.score}
                 </div>
                 <div className="text-xs font-bold uppercase text-zinc-500 tracking-wider">
@@ -402,7 +402,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
               </div>
 
               {/* Progress Bar */}
-              <div className="w-full h-2 bg-zinc-800 overflow-hidden mb-6">
+              <div className="w-full h-2 bg-zinc-200 overflow-hidden mb-6">
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: `${currentFeedback.score}%` }}
@@ -418,7 +418,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
               </div>
 
               {/* Feedback Breakdown */}
-              <div className="space-y-2.5 bg-black p-4 border border-zinc-800">
+              <div className="space-y-2.5 bg-white p-4 border border-zinc-200">
                 <div className="flex items-center gap-2">
                   {currentFeedback.type === 'positive' ? (
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -427,28 +427,28 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                   ) : (
                     <Zap className="w-4 h-4 text-[#FFFF00] shrink-0" />
                   )}
-                  <h4 className="text-xs font-black uppercase text-white tracking-wider">
+                  <h4 className="text-xs font-black uppercase text-black tracking-wider">
                     {currentFeedback.title}
                   </h4>
                 </div>
-                <p className="text-xs text-zinc-400 leading-relaxed font-medium">
+                <p className="text-xs text-zinc-600 leading-relaxed font-medium">
                   {currentFeedback.description}
                 </p>
               </div>
 
               {/* Persona Archetype Info */}
-              <div className="mt-6 pt-6 border-t border-zinc-800">
+              <div className="mt-6 pt-6 border-t border-zinc-200">
                 <h5 className="text-[10px] font-black uppercase text-zinc-500 tracking-widest mb-2">
                   Ficha de {selectedPersona.name}
                 </h5>
-                <p className="text-xs text-zinc-400 italic mb-3 font-medium">
+                <p className="text-xs text-zinc-600 italic mb-3 font-medium">
                   "{selectedPersona.bio}"
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {selectedPersona.badges.map((b, i) => (
                     <span
                       key={i}
-                      className="px-2 py-0.5 text-[10px] font-black uppercase bg-black text-zinc-300 border border-zinc-800"
+                      className="px-2 py-0.5 text-[10px] font-black uppercase bg-white text-zinc-700 border border-zinc-200"
                     >
                       {b}
                     </span>
@@ -460,20 +460,20 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
 
             {/* Action Card to Enter App */}
             <div className="bg-[#111111] border-2 border-[#FFFF00] p-6 text-center space-y-4 shadow-[0_0_25px_rgba(255,255,0,0.15)]">
-              <div className="inline-block bg-[#FFFF00] text-black text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
+              <div className="inline-block bg-[#FFFF00] text-white text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
                 Acceso Ilimitado
               </div>
-              <h4 className="text-xl font-black text-white font-display uppercase tracking-tight">
+              <h4 className="text-xl font-black text-black font-display uppercase tracking-tight">
                 ¿Listo para dominar cada interacción?
               </h4>
-              <p className="text-xs sm:text-sm text-zinc-400 font-medium">
+              <p className="text-xs sm:text-sm text-zinc-600 font-medium">
                 Desbloquea todos los arquetipos, notas de voz simuladas, modo "Chica difícil" y auditoría completa de tus conversaciones.
               </p>
               
               <button
                 id="simulator-open-app-cta"
                 onClick={onOpenAppClick}
-                className="w-full py-3.5 px-6 font-black uppercase text-xs tracking-tighter text-black bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                className="w-full py-3.5 px-6 font-black uppercase text-xs tracking-tighter text-white bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
               >
                 <span>Entrar a la App</span>
                 <ArrowRight className="w-4 h-4" />

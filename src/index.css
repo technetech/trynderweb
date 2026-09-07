@@ -7,15 +7,15 @@
   --color-trynder-yellow: #FFFF00;
   --color-trynder-yellow-light: #FFFF66;
   --color-trynder-yellow-dark: #E6E600;
-  --color-trynder-black: #000000;
+  --color-trynder-black: #FFFFFF;
   --color-trynder-dark: #111111;
   --color-trynder-card: #161616;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .font-display {
@@ -40,19 +40,19 @@ body {
 }
 
 .editorial-btn-black {
-  border: 2px solid #FFFFFF;
+  border: 2px solid #000000;
   padding: 8px 24px;
   font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #000000;
   transition: all 0.2s ease;
 }
 .editorial-btn-black:hover {
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
 .editorial-btn-yellow {
@@ -75,7 +75,7 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #FFFFFF;
 }
 ::-webkit-scrollbar-thumb {
   background: #27272A;

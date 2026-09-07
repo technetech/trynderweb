@@ -7,18 +7,18 @@ interface VipSectionProps {
 
 export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
   return (
-    <section className="py-20 lg:py-28 bg-black relative border-t border-zinc-800">
+    <section className="py-20 lg:py-28 bg-white relative border-t border-zinc-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-left max-w-3xl mb-16 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Membresía & Pases
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-white font-display uppercase italic">
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
             Acceso sin restricciones.{' '}
             <span className="text-[#FFFF00] not-italic">Calibración Total.</span>
           </h2>
-          <p className="text-zinc-400 text-base sm:text-lg font-medium">
+          <p className="text-zinc-600 text-base sm:text-lg font-medium">
             Comienza gratis hoy y desbloquea el pase VIP cuando quieras llevar tu temple conversacional a la élite.
           </p>
         </div>
@@ -26,22 +26,22 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl items-stretch">
           
           {/* Plan Estándar / Gratis */}
-          <div className="bg-[#111111] border-2 border-zinc-800 p-8 flex flex-col justify-between">
+          <div className="bg-[#111111] border-2 border-zinc-200 p-8 flex flex-col justify-between">
             <div className="space-y-6">
               <div>
                 <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500 font-mono-tag">
                   Tier 01 // Gratuito
                 </span>
-                <h3 className="text-2xl font-black text-white font-display uppercase mt-1">
+                <h3 className="text-2xl font-black text-black font-display uppercase mt-1">
                   Trynder Free
                 </h3>
                 <div className="mt-4 flex items-baseline gap-2">
-                  <span className="text-4xl font-black text-white font-display">$0</span>
-                  <span className="text-xs text-zinc-400 font-bold uppercase tracking-wider">/ para siempre</span>
+                  <span className="text-4xl font-black text-black font-display">$0</span>
+                  <span className="text-xs text-zinc-600 font-bold uppercase tracking-wider">/ para siempre</span>
                 </div>
               </div>
 
-              <ul className="space-y-3 text-xs sm:text-sm text-zinc-300 font-medium">
+              <ul className="space-y-3 text-xs sm:text-sm text-zinc-700 font-medium">
                 <li className="flex items-center gap-2.5">
                   <Check className="w-4 h-4 text-[#FFFF00] shrink-0" />
                   <span>Acceso a 3 arquetipos básicos (Sabine, Joséphine)</span>
@@ -69,7 +69,7 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
               <button
                 id="pricing-free-cta"
                 onClick={onOpenAppClick}
-                className="w-full py-3.5 bg-black hover:bg-zinc-800 text-white border border-zinc-700 font-black text-xs uppercase tracking-wider transition-colors cursor-pointer"
+                className="w-full py-3.5 bg-white hover:bg-zinc-800 text-black border border-zinc-700 font-black text-xs uppercase tracking-wider transition-colors cursor-pointer"
               >
                 Empezar Gratis
               </button>
@@ -80,7 +80,7 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
           <div className="bg-[#111111] border-2 border-[#FFFF00] p-8 flex flex-col justify-between relative shadow-[0_0_35px_rgba(255,255,0,0.18)]">
             
             {/* Top Badge */}
-            <div className="absolute -top-3.5 right-6 bg-[#FFFF00] text-black text-[10px] font-black uppercase px-3 py-1 tracking-widest shadow-md">
+            <div className="absolute -top-3.5 right-6 bg-[#FFFF00] text-white text-[10px] font-black uppercase px-3 py-1 tracking-widest shadow-md">
               Recomendado
             </div>
 
@@ -90,27 +90,27 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
                   <span className="text-[10px] font-black uppercase tracking-widest text-[#FFFF00] font-mono-tag">
                     Tier 02 // Ilimitado
                   </span>
-                  <span className="px-2 py-0.5 text-[9px] font-black uppercase bg-[#8b5cf6] text-white">
+                  <span className="px-2 py-0.5 text-[9px] font-black uppercase bg-[#8b5cf6] text-black">
                     VIP
                   </span>
                 </div>
-                <h3 className="text-2xl font-black text-white font-display uppercase mt-1">
+                <h3 className="text-2xl font-black text-black font-display uppercase mt-1">
                   Trynder Pro VIP
                 </h3>
                 <div className="mt-4 flex items-baseline gap-2">
                   <span className="text-4xl font-black text-[#FFFF00] font-display">$9.99</span>
-                  <span className="text-xs text-zinc-400 font-bold uppercase tracking-wider">/ mes (cancela cuando quieras)</span>
+                  <span className="text-xs text-zinc-600 font-bold uppercase tracking-wider">/ mes (cancela cuando quieras)</span>
                 </div>
               </div>
 
               <ul className="space-y-3 text-xs sm:text-sm text-zinc-200 font-medium">
                 <li className="flex items-center gap-2.5">
                   <Check className="w-4 h-4 text-[#FFFF00] shrink-0" />
-                  <span className="font-bold text-white">IAs ilimitadas: Sofía, Yaritza, Lison y 12 más</span>
+                  <span className="font-bold text-black">IAs ilimitadas: Sofía, Yaritza, Lison y 12 más</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Check className="w-4 h-4 text-[#FFFF00] shrink-0" />
-                  <span className="font-bold text-white">Chats ilimitados 24/7 sin cortes</span>
+                  <span className="font-bold text-black">Chats ilimitados 24/7 sin cortes</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Check className="w-4 h-4 text-[#FFFF00] shrink-0" />
@@ -131,7 +131,7 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
               <button
                 id="pricing-vip-cta"
                 onClick={onOpenAppClick}
-                className="w-full py-4 bg-[#FFFF00] text-black font-black text-xs uppercase tracking-tighter hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                className="w-full py-4 bg-[#FFFF00] text-white font-black text-xs uppercase tracking-tighter hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
               >
                 <span>Desbloquear Todo el Acceso</span>
                 <ArrowRight className="w-4 h-4" />
