@@ -24,11 +24,11 @@ export const FaqSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-[#111111] border-2 border-zinc-200 hover:border-[#FFFF00] transition-colors"
+                className="bg-[#111111] border-2 border-zinc-800 hover:border-[#FFFF00] transition-colors"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
-                  className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-black text-sm sm:text-base uppercase text-black cursor-pointer"
+                  className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 font-black text-sm sm:text-base uppercase text-white cursor-pointer"
                 >
                   <span className="tracking-tight">{faq.q}</span>
                   <ChevronDown
@@ -38,7 +38,7 @@ export const FaqSection: React.FC = () => {
                   />
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-6 sm:px-6 text-zinc-600 text-xs sm:text-sm leading-relaxed border-t border-zinc-200 pt-4 font-medium">
+                  <div className="px-5 pb-6 sm:px-6 text-zinc-300 text-xs sm:text-sm leading-relaxed border-t border-zinc-800 pt-4 font-medium">
                     {faq.a}
                   </div>
                 )}
