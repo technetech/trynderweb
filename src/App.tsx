@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { HowItWorks } from './components/HowItWorks';
-import { LiveSimulator } from './components/LiveSimulator';
 import { PersonasSection } from './components/PersonasSection';
 import { MatchesPreviewSection } from './components/MatchesPreviewSection';
 import { FeaturesSection } from './components/FeaturesSection';
@@ -42,9 +41,6 @@ export default function App() {
 
         {/* 4-Step Methodology */}
         <HowItWorks onOpenAppClick={handleOpenApp} />
-
-        {/* Interactive Live Chat Simulator with Aura feedback */}
-        <LiveSimulator onOpenAppClick={handleOpenApp} />
 
         {/* The 4 Reference Personas (Sofia, Sabine, Joséphine, Yaritza) */}
         <PersonasSection onOpenAppClick={handleOpenApp} />

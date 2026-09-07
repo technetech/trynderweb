@@ -42,10 +42,10 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 bg-white border border-zinc-700 group-hover:border-[#FFFF00] flex items-center justify-center text-[#FFFF00] transition-colors">
+                    <div className="w-12 h-12 bg-[#FFFF00] border border-[#FFFF00] flex items-center justify-center text-white transition-colors">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="px-2.5 py-1 text-[10px] font-black uppercase tracking-wider bg-white text-[#FFFF00] border border-zinc-200 font-mono-tag">
+                    <span className="px-2.5 py-1 text-[10px] font-black uppercase tracking-wider bg-[#FFFF00] text-white font-mono-tag border border-transparent">
                       {feat.metric}
                     </span>
                   </div>
@@ -95,7 +95,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
                 <X className="w-4 h-4 stroke-[3]" />
                 <span>Sin Trynder (El método que no funciona)</span>
               </div>
-              <ul className="space-y-3 text-xs sm:text-sm text-white font-medium">
+              <ul className="space-y-3 text-xs sm:text-sm text-black font-medium">
                 <li className="flex items-start gap-2.5">
                   <span className="text-red-500 font-black shrink-0">✕</span>
                   <span>Mandas "hola qué tal tu día" y compites con otros 50 mensajes idénticos en su bandeja.</span>
@@ -121,7 +121,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
                 <Check className="w-4 h-4 stroke-[3]" />
                 <span>Con Trynder (Mentalidad de Calibración & Aura)</span>
               </div>
-              <ul className="space-y-3 text-xs sm:text-sm text-white font-medium">
+              <ul className="space-y-3 text-xs sm:text-sm text-black font-medium">
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#FFFF00] font-black shrink-0">✓</span>
                   <span>Abres con observaciones ingeniosas que provocan curiosidad inmediata y risas.</span>

@@ -134,31 +134,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
           ))}
         </div>
 
-        {/* Matches & VIP Hint Bar */}
-        <div className="mt-12 p-6 bg-[#111111] border-2 border-zinc-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-white border border-zinc-700 flex items-center justify-center text-[#FFFF00] shrink-0">
-              <Zap className="w-6 h-6 fill-[#FFFF00]" />
-            </div>
-            <div>
-              <h4 className="text-base font-black uppercase text-white tracking-tight">
-                ¿Buscas retos más complejos o situaciones específicas?
-              </h4>
-              <p className="text-xs sm:text-sm text-white font-medium">
-                Trynder añade nuevos arquetipos cada semana: perfiles de alto estatus, retos directos y pruebas de marco de nivel élite.
-              </p>
-            </div>
-          </div>
 
-          <button
-            id="explore-all-personas-cta"
-            onClick={onOpenAppClick}
-            className="shrink-0 px-6 py-3 text-xs font-black uppercase tracking-wider text-white bg-transparent hover:bg-transparent hover:text-white border border-zinc-600 transition-colors flex items-center gap-2 cursor-pointer"
-          >
-            <span>Ver todos los perfiles</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </button>
-        </div>
 
       </div>
     </section>

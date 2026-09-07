@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 py-12 border-b border-zinc-200">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-12 border-b border-zinc-200">
           
           {/* Col 1: Brand */}
           <div className="md:col-span-2 space-y-4">
@@ -52,39 +52,7 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Col 2: Navigation */}
-          <div>
-            <h4 className="text-black font-black text-xs uppercase tracking-widest mb-4">
-              Navegación
-            </h4>
-            <ul className="space-y-2.5 text-xs font-semibold uppercase tracking-wider">
-              <li>
-                <a href="#como-funciona" className="hover:text-[#FFFF00] transition-colors">
-                  Metodología
-                </a>
-              </li>
-              <li>
-                <a href="#simulador" className="hover:text-[#FFFF00] transition-colors">
-                  Simulador interactivo
-                </a>
-              </li>
-              <li>
-                <a href="#perfiles" className="hover:text-[#FFFF00] transition-colors">
-                  Catálogo de IAs
-                </a>
-              </li>
-              <li>
-                <a href="#beneficios" className="hover:text-[#FFFF00] transition-colors">
-                  Beneficios y Calibración
-                </a>
-              </li>
-              <li>
-                <a href="#testimonios" className="hover:text-[#FFFF00] transition-colors">
-                  Casos de éxito
-                </a>
-              </li>
-            </ul>
-          </div>
+
 
           {/* Col 3: Arquetipos */}
           <div>
