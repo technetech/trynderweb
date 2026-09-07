@@ -36,7 +36,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 mb-6 w-fit tracking-wider shadow-sm"
+            className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 mb-6 w-fit tracking-wider shadow-sm"
           >
             High-Performance Social AI
           </motion.div>
@@ -72,7 +72,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
             <button
               id="hero-primary-cta"
               onClick={onOpenAppClick}
-              className="bg-[#FFFF00] text-white px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-black uppercase tracking-tighter hover:scale-105 transition-transform shadow-[0_0_30px_rgba(255,255,0,0.35)] cursor-pointer flex items-center gap-3"
+              className="bg-[#FFFF00] text-black px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-black uppercase tracking-tighter hover:scale-105 transition-transform shadow-[0_0_30px_rgba(255,255,0,0.35)] cursor-pointer flex items-center gap-3"
             >
               <span>Entrar a la App</span>
               <ArrowRight className="w-5 h-5" />
@@ -171,7 +171,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
                   {swipeFeedback && (
                     <div className="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-xs z-20">
                       {swipeFeedback === 'like' ? (
-                        <div className="bg-[#FFFF00] text-white px-6 py-2.5 font-black text-xl uppercase tracking-tighter shadow-lg flex items-center gap-2">
+                        <div className="bg-[#FFFF00] text-black px-6 py-2.5 font-black text-xl uppercase tracking-tighter shadow-lg flex items-center gap-2">
                           <Heart className="w-5 h-5 fill-black" />
                           <span>¡MATCH!</span>
                         </div>
@@ -223,7 +223,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
               <button
                 id="preview-like-button"
                 onClick={() => handleAction('like')}
-                className="flex-1 py-2.5 bg-[#FFFF00] hover:bg-white text-white font-black text-xs uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-colors shadow-md cursor-pointer"
+                className="flex-1 py-2.5 bg-[#FFFF00] hover:bg-white text-black font-black text-xs uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-colors shadow-md cursor-pointer"
               >
                 <Heart className="w-4 h-4 fill-black" />
                 <span>Match</span>

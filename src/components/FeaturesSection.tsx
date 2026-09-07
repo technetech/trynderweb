@@ -15,7 +15,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
         
         {/* Header */}
         <div className="text-left max-w-3xl mb-16 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Entrenamiento de Alto Impacto
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
@@ -147,7 +147,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
             <button
               id="comparison-cta-btn"
               onClick={onOpenAppClick}
-              className="bg-[#FFFF00] text-white px-8 py-4 text-xs font-black uppercase tracking-tighter hover:scale-105 transition-transform inline-flex items-center gap-2 cursor-pointer shadow-md"
+              className="bg-[#FFFF00] text-black px-8 py-4 text-xs font-black uppercase tracking-tighter hover:scale-105 transition-transform inline-flex items-center gap-2 cursor-pointer shadow-md"
             >
               <span>Subir de nivel ahora</span>
               <ArrowRight className="w-4 h-4" />

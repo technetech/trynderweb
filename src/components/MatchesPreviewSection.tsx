@@ -20,7 +20,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
           
           {/* Left: Persuasive Explanation */}
           <div className="lg:col-span-6 space-y-6 text-left">
-            <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+            <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
               Bandeja de Entrada & Multi-Chat
             </div>
 
@@ -35,7 +35,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
 
             <div className="space-y-4 pt-2">
               <div className="flex items-start gap-4 bg-[#111111] p-4 border border-zinc-200">
-                <div className="w-8 h-8 bg-[#FFFF00] text-white font-black flex items-center justify-center shrink-0 text-xs">
+                <div className="w-8 h-8 bg-[#FFFF00] text-black font-black flex items-center justify-center shrink-0 text-xs">
                   01
                 </div>
                 <div>
@@ -49,7 +49,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
               </div>
 
               <div className="flex items-start gap-4 bg-[#111111] p-4 border border-zinc-200">
-                <div className="w-8 h-8 bg-[#FFFF00] text-white font-black flex items-center justify-center shrink-0 text-xs">
+                <div className="w-8 h-8 bg-[#FFFF00] text-black font-black flex items-center justify-center shrink-0 text-xs">
                   02
                 </div>
                 <div>
@@ -63,7 +63,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
               </div>
 
               <div className="flex items-start gap-4 bg-[#111111] p-4 border border-zinc-200">
-                <div className="w-8 h-8 bg-[#FFFF00] text-white font-black flex items-center justify-center shrink-0 text-xs">
+                <div className="w-8 h-8 bg-[#FFFF00] text-black font-black flex items-center justify-center shrink-0 text-xs">
                   03
                 </div>
                 <div>
@@ -81,7 +81,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
               <button
                 id="matches-section-cta"
                 onClick={onOpenAppClick}
-                className="bg-[#FFFF00] text-white px-8 py-4 text-sm font-black uppercase tracking-tighter hover:scale-105 transition-transform flex items-center gap-2 cursor-pointer shadow-md"
+                className="bg-[#FFFF00] text-black px-8 py-4 text-sm font-black uppercase tracking-tighter hover:scale-105 transition-transform flex items-center gap-2 cursor-pointer shadow-md"
               >
                 <span>Entrar a mis matches</span>
                 <ArrowRight className="w-4 h-4" />
@@ -199,7 +199,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
                       {/* Action / Unread Badge */}
                       <div className="shrink-0 flex items-center gap-1 self-center">
                         {chat.unreadCount ? (
-                          <span className="w-4 h-4 bg-[#FFFF00] text-white text-[9px] font-black flex items-center justify-center">
+                          <span className="w-4 h-4 bg-[#FFFF00] text-black text-[9px] font-black flex items-center justify-center">
                             {chat.unreadCount}
                           </span>
                         ) : null}
@@ -217,7 +217,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
                 <button
                   id="preview-open-full-chats-cta"
                   onClick={onOpenAppClick}
-                  className="w-full py-3 bg-black text-white hover:bg-[#FFFF00] font-black text-xs uppercase tracking-tighter transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-3 bg-black text-black hover:bg-[#FFFF00] font-black text-xs uppercase tracking-tighter transition-colors flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <span>Abrir Chats en la App</span>
                   <ArrowRight className="w-3.5 h-3.5" />

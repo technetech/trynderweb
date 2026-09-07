@@ -10,7 +10,7 @@ export const FaqSection: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-left mb-12 space-y-3">
-          <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             FAQ // Consultas
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-black font-display uppercase italic">

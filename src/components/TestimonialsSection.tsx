@@ -17,7 +17,7 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-left max-w-3xl mb-16 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Casos de Estudio
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">

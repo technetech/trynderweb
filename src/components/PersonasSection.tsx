@@ -18,7 +18,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
         
         {/* Section Header */}
         <div className="text-left max-w-3xl mb-16 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Lookbook de Arquetipos
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
@@ -60,7 +60,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
                       persona.difficulty === 'Modo Desafío'
                         ? 'bg-red-500 text-black'
                         : persona.difficulty === 'Avanzado'
-                        ? 'bg-[#FFFF00] text-white'
+                        ? 'bg-[#FFFF00] text-black'
                         : 'bg-white text-zinc-700 border border-zinc-200'
                     }`}
                   >
@@ -124,7 +124,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
                 <button
                   id={`chat-with-${persona.id}`}
                   onClick={onOpenAppClick}
-                  className="w-full py-2.5 px-4 text-xs font-black uppercase tracking-tighter text-white bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-1.5 cursor-pointer"
+                  className="w-full py-2.5 px-4 text-xs font-black uppercase tracking-tighter text-black bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-1.5 cursor-pointer"
                 >
                   <Heart className="w-3.5 h-3.5 fill-black" />
                   <span>Chatear con {persona.name}</span>

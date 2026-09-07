@@ -17,7 +17,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenAppClick }) => {
         {/* Glow Container */}
         <div className="relative bg-[#111111] border-2 border-[#FFFF00] p-8 sm:p-16 shadow-[0_0_60px_rgba(255,255,0,0.18)] overflow-hidden">
           
-          <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-3 py-1 tracking-widest mb-6">
+          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-3 py-1 tracking-widest mb-6">
             Tu Aura Empieza Aquí
           </div>
 
@@ -37,7 +37,7 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenAppClick }) => {
             <button
               id="final-cta-btn"
               onClick={onOpenAppClick}
-              className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 text-base font-black uppercase tracking-tighter text-white bg-[#FFFF00] hover:scale-105 transition-all shadow-[0_0_40px_rgba(255,255,0,0.4)] cursor-pointer"
+              className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 text-base font-black uppercase tracking-tighter text-black bg-[#FFFF00] hover:scale-105 transition-all shadow-[0_0_40px_rgba(255,255,0,0.4)] cursor-pointer"
             >
               <span>Entrar a Trynder Ahora</span>
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-2" />

@@ -11,7 +11,7 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-left max-w-3xl mb-16 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Membresía & Pases
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
@@ -80,7 +80,7 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
           <div className="bg-[#111111] border-2 border-[#FFFF00] p-8 flex flex-col justify-between relative shadow-[0_0_35px_rgba(255,255,0,0.18)]">
             
             {/* Top Badge */}
-            <div className="absolute -top-3.5 right-6 bg-[#FFFF00] text-white text-[10px] font-black uppercase px-3 py-1 tracking-widest shadow-md">
+            <div className="absolute -top-3.5 right-6 bg-[#FFFF00] text-black text-[10px] font-black uppercase px-3 py-1 tracking-widest shadow-md">
               Recomendado
             </div>
 
@@ -131,7 +131,7 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
               <button
                 id="pricing-vip-cta"
                 onClick={onOpenAppClick}
-                className="w-full py-4 bg-[#FFFF00] text-white font-black text-xs uppercase tracking-tighter hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                className="w-full py-4 bg-[#FFFF00] text-black font-black text-xs uppercase tracking-tighter hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
               >
                 <span>Desbloquear Todo el Acceso</span>
                 <ArrowRight className="w-4 h-4" />

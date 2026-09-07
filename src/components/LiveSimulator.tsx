@@ -171,7 +171,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-white text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Laboratorio de Conversación en Vivo
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
@@ -193,7 +193,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                 onClick={() => handleSelectPersona(p)}
                 className={`flex items-center gap-3 px-4 py-2 border transition-all cursor-pointer ${
                   isSelected
-                    ? 'bg-[#FFFF00] text-white border-[#FFFF00] shadow-[0_0_15px_rgba(255,255,0,0.3)]'
+                    ? 'bg-[#FFFF00] text-black border-[#FFFF00] shadow-[0_0_15px_rgba(255,255,0,0.3)]'
                     : 'bg-[#111111] text-zinc-600 border-zinc-200 hover:border-zinc-700 hover:text-white'
                 }`}
               >
@@ -242,7 +242,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                     <h3 className="text-sm font-black text-black uppercase tracking-tight">
                       {selectedPersona.name}, {selectedPersona.age}
                     </h3>
-                    <span className="text-[9px] font-black px-1.5 py-0.5 bg-[#FFFF00] text-white uppercase">
+                    <span className="text-[9px] font-black px-1.5 py-0.5 bg-[#FFFF00] text-black uppercase">
                       {selectedPersona.archetype}
                     </span>
                   </div>
@@ -276,7 +276,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                     <div
                       className={`max-w-[82%] px-4 py-3 text-xs sm:text-sm leading-relaxed ${
                         isUser
-                          ? 'bg-[#FFFF00] text-white font-bold shadow-md'
+                          ? 'bg-[#FFFF00] text-black font-bold shadow-md'
                           : 'bg-zinc-100 text-zinc-200 border border-zinc-200'
                       }`}
                     >
@@ -356,7 +356,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
                   id="simulator-send-btn"
                   type="submit"
                   disabled={isTyping || !inputText.trim()}
-                  className="px-5 py-3 bg-[#FFFF00] text-white hover:scale-105 disabled:opacity-40 transition-all font-black uppercase text-xs cursor-pointer flex items-center gap-1"
+                  className="px-5 py-3 bg-[#FFFF00] text-black hover:scale-105 disabled:opacity-40 transition-all font-black uppercase text-xs cursor-pointer flex items-center gap-1"
                 >
                   <Send className="w-4 h-4" />
                 </button>
@@ -460,7 +460,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
 
             {/* Action Card to Enter App */}
             <div className="bg-[#111111] border-2 border-[#FFFF00] p-6 text-center space-y-4 shadow-[0_0_25px_rgba(255,255,0,0.15)]">
-              <div className="inline-block bg-[#FFFF00] text-white text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
+              <div className="inline-block bg-[#FFFF00] text-black text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
                 Acceso Ilimitado
               </div>
               <h4 className="text-xl font-black text-black font-display uppercase tracking-tight">
@@ -473,7 +473,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
               <button
                 id="simulator-open-app-cta"
                 onClick={onOpenAppClick}
-                className="w-full py-3.5 px-6 font-black uppercase text-xs tracking-tighter text-white bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                className="w-full py-3.5 px-6 font-black uppercase text-xs tracking-tighter text-black bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
               >
                 <span>Entrar a la App</span>
                 <ArrowRight className="w-4 h-4" />

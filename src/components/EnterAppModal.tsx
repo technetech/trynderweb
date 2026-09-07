@@ -57,7 +57,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
 
           {!submitted ? (
             <div className="space-y-6">
-              <div className="inline-block bg-[#FFFF00] text-white text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
+              <div className="inline-block bg-[#FFFF00] text-black text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
                 Acceso a la WebApp // Trynder
               </div>
 
@@ -107,7 +107,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                 {/* Primary Button */}
                 <button
                   type="submit"
-                  className="w-full py-4 px-6 font-black uppercase text-xs sm:text-sm tracking-tighter text-white bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                  className="w-full py-4 px-6 font-black uppercase text-xs sm:text-sm tracking-tighter text-black bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
                 >
                   <span>Entrar a Trynder</span>
                   <ArrowRight className="w-4 h-4" />
@@ -120,7 +120,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
             </div>
           ) : (
             <div className="text-center py-6 space-y-4">
-              <div className="w-14 h-14 bg-[#FFFF00] text-white mx-auto flex items-center justify-center shadow-[0_0_30px_rgba(255,255,0,0.3)]">
+              <div className="w-14 h-14 bg-[#FFFF00] text-black mx-auto flex items-center justify-center shadow-[0_0_30px_rgba(255,255,0,0.3)]">
                 <CheckCircle2 className="w-8 h-8 stroke-[2.5]" />
               </div>
 
@@ -138,7 +138,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                     onClose();
                     onStartSimulation();
                   }}
-                  className="w-full py-3.5 px-6 font-black uppercase text-xs tracking-wider text-white bg-[#FFFF00] hover:scale-102 transition-transform shadow-md cursor-pointer"
+                  className="w-full py-3.5 px-6 font-black uppercase text-xs tracking-wider text-black bg-[#FFFF00] hover:scale-102 transition-transform shadow-md cursor-pointer"
                 >
                   Ir al Simulador en Vivo Ahora
                 </button>
