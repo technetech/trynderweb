@@ -108,25 +108,25 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
         </div>
 
         {/* Right Column: Editorial Stage & Interactive Phone Frame */}
-        <div className="lg:col-span-5 relative bg-[#111111] border-t lg:border-t-0 lg:border-l border-zinc-200 flex flex-col items-center justify-center p-6 sm:p-12 overflow-hidden min-h-[620px]">
+        <div className="lg:col-span-5 relative bg-gradient-to-t from-white via-white to-[#FFBF00]/30 border-t lg:border-t-0 lg:border-l border-zinc-200 flex flex-col items-center justify-center p-6 sm:p-12 overflow-hidden min-h-[620px]">
           
           {/* Top Right Metric Badge */}
           <div className="absolute top-6 right-6 sm:top-8 sm:right-8 text-right z-20">
             <div className="text-4xl sm:text-5xl font-black text-[#FFBF00] tracking-tight">98%</div>
-            <div className="text-[9px] sm:text-[10px] font-bold uppercase text-white tracking-tighter leading-tight">
+            <div className="text-[9px] sm:text-[10px] font-bold uppercase text-black tracking-tighter leading-tight">
               Tasa de mejora <br /> percibida
             </div>
           </div>
 
           {/* Subdued Editorial Watermark */}
           <div className="absolute bottom-10 left-[-40px] rotate-90 hidden sm:block pointer-events-none select-none">
-            <span className="text-[60px] font-black text-white opacity-5 tracking-tighter">
+            <span className="text-[60px] font-black text-black opacity-5 tracking-tighter">
               CONVERSATION
             </span>
           </div>
 
           {/* Image Carousel */}
-          <div className="w-[310px] sm:w-[380px] relative overflow-hidden rounded-[20px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9),0_0_35px_rgba(255,191,0,0.15)] z-10 flex flex-col bg-white">
+          <div className="w-[310px] sm:w-[380px] relative overflow-hidden rounded-[20px] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_35px_rgba(255,191,0,0.4)] z-10 flex flex-col bg-white">
             <div className="relative aspect-[3/3.8] w-full">
               <AnimatePresence mode="wait">
                 <motion.img
