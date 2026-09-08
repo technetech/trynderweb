@@ -80,14 +80,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
               <ArrowRight className="w-5 h-5" />
             </button>
 
-            <button
-              id="hero-secondary-demo"
-              onClick={onExploreDemoClick}
-              className="border-2 border-white px-6 py-4 text-xs font-black uppercase tracking-widest text-black hover:bg-white hover:text-black transition-all cursor-pointer flex items-center gap-2"
-            >
-              <Play className="w-3.5 h-3.5 fill-current" />
-              <span>Ver Simulador</span>
-            </button>
+
           </motion.div>
 
           {/* User Count & Active Metric */}
@@ -110,13 +103,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
         {/* Right Column: Editorial Stage & Interactive Phone Frame */}
         <div className="lg:col-span-5 relative bg-transparent border-t lg:border-t-0 lg:border-l border-zinc-200 flex flex-col items-center justify-center p-6 sm:p-12 overflow-hidden min-h-[620px]">
           
-          {/* Top Right Metric Badge */}
-          <div className="absolute top-6 right-6 sm:top-8 sm:right-8 text-right z-20">
-            <div className="text-4xl sm:text-5xl font-black text-[#FFBF00] tracking-tight">98%</div>
-            <div className="text-[9px] sm:text-[10px] font-bold uppercase text-black tracking-tighter leading-tight">
-              Tasa de mejora <br /> percibida
-            </div>
-          </div>
+
 
 
 

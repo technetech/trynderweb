@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { HowItWorks } from './components/HowItWorks';
@@ -10,13 +10,10 @@ import { VipSection } from './components/VipSection';
 import { FaqSection } from './components/FaqSection';
 import { CtaBanner } from './components/CtaBanner';
 import { Footer } from './components/Footer';
-import { EnterAppModal } from './components/EnterAppModal';
 
 export default function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const handleOpenApp = () => {
-    setIsModalOpen(true);
+    window.location.href = 'https://trynder.club';
   };
 
   const handleScrollToSimulator = () => {
@@ -66,13 +63,6 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
-
-      {/* Enter App Modal */}
-      <EnterAppModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        onStartSimulation={handleScrollToSimulator}
-      />
     </div>
   );
 }
