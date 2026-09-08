@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowRight, Sparkles, Heart, X, Zap, Play } from 'lucide-react';
-import { PERSONAS } from '../data/mockData';
+import { ArrowRight, Play } from 'lucide-react';
+import img1 from '../assets/carousel/1.jpg';
+import img2 from '../assets/carousel/2.jpg';
+import img3 from '../assets/carousel/3.jpg';
+import img4 from '../assets/carousel/4.jpg';
+import img5 from '../assets/carousel/5.jpg';
+
+const CAROUSEL_IMAGES = [img1, img2, img3, img4, img5];
 
 interface HeroProps {
   onOpenAppClick: () => void;
@@ -9,18 +15,14 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }) => {
-  const [currentProfileIndex, setCurrentProfileIndex] = useState(0);
-  const [swipeFeedback, setSwipeFeedback] = useState<'like' | 'pass' | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const profile = PERSONAS[currentProfileIndex];
-
-  const handleAction = (type: 'like' | 'pass') => {
-    setSwipeFeedback(type);
-    setTimeout(() => {
-      setSwipeFeedback(null);
-      setCurrentProfileIndex((prev) => (prev + 1) % PERSONAS.length);
-    }, 450);
-  };
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % CAROUSEL_IMAGES.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="relative overflow-hidden bg-white border-b border-zinc-200">
@@ -123,113 +125,33 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
             </span>
           </div>
 
-          {/* High-Performance Interactive Phone Frame */}
-          <div className="w-[310px] sm:w-[340px] bg-white border-[6px] border-zinc-200 rounded-[38px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9),0_0_35px_rgba(255,255,0,0.15)] relative overflow-hidden flex flex-col z-10">
-            
-            {/* Phone Top Header */}
-            <div className="bg-zinc-100 p-4 border-b border-zinc-200 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#FFBF00] to-white flex items-center justify-center text-white font-black text-xs">
-                  {profile.name[0]}
-                </div>
-                <div>
-                  <div className="text-xs font-black text-white uppercase tracking-tight">
-                    {profile.name} (Advanced)
-                  </div>
-                  <div className="text-[9px] text-[#FFBF00] font-bold tracking-wider uppercase flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#FFBF00] animate-ping" />
-                    • EN LÍNEA
-                  </div>
-                </div>
-              </div>
-              <span className="px-2 py-0.5 text-[9px] font-black uppercase bg-[#8b5cf6] text-white">
-                VIP
-              </span>
-            </div>
-
-            {/* Profile Card View */}
-            <div className="relative aspect-[3/3.8] bg-zinc-50 overflow-hidden">
+          {/* Image Carousel */}
+          <div className="w-[310px] sm:w-[380px] relative overflow-hidden rounded-[20px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9),0_0_35px_rgba(255,191,0,0.15)] z-10 flex flex-col bg-white">
+            <div className="relative aspect-[3/3.8] w-full">
               <AnimatePresence mode="wait">
-                <motion.div
-                  key={profile.id}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9, x: swipeFeedback === 'like' ? 100 : -100 }}
-                  transition={{ duration: 0.25 }}
-                  className="relative w-full h-full"
-                >
-                  <img
-                    src={profile.image}
-                    alt={profile.name}
-                    className="w-full h-full object-cover object-center"
-                    referrerPolicy="no-referrer"
-                  />
-                  
-                  <div className="absolute inset-0 bg-gradient-to-t from-white via-white/30 to-transparent pointer-events-none" />
-
-                  {/* Swipe Match Indicator */}
-                  {swipeFeedback && (
-                    <div className="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-xs z-20">
-                      {swipeFeedback === 'like' ? (
-                        <div className="bg-[#FFBF00] text-black px-6 py-2.5 font-black text-xl uppercase tracking-tighter shadow-lg flex items-center gap-2">
-                          <Heart className="w-5 h-5 fill-black" />
-                          <span>¡MATCH!</span>
-                        </div>
-                      ) : (
-                        <div className="bg-zinc-100 border-2 border-red-500 text-red-400 px-6 py-2.5 font-black text-xl uppercase tracking-tighter flex items-center gap-2">
-                          <X className="w-5 h-5" />
-                          <span>SIGUIENTE</span>
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {/* Profile Info Overlay */}
-                  <div className="absolute bottom-3 left-3 right-3 text-white z-10">
-                    <div className="flex items-baseline justify-between">
-                      <h2 className="text-xl font-black uppercase tracking-tight font-display">
-                        {profile.name}, {profile.age}
-                      </h2>
-                      <span className="text-[10px] font-bold text-[#FFBF00] uppercase">
-                        {profile.archetype}
-                      </span>
-                    </div>
-                    <p className="text-xs text-white font-medium">
-                      {profile.profession}
-                    </p>
-                  </div>
-                </motion.div>
+                <motion.img
+                  key={currentIndex}
+                  src={CAROUSEL_IMAGES[currentIndex]}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute inset-0 w-full h-full object-contain bg-white"
+                  alt={`Slide ${currentIndex + 1}`}
+                />
               </AnimatePresence>
-
-              {/* Tag Aura */}
-              <div className="absolute top-3 left-3 z-10">
-                <div className="px-2 py-0.5 bg-white/80 text-[#FFBF00] text-[10px] font-black uppercase flex items-center gap-1 border border-zinc-200">
-                  <Zap className="w-3 h-3 fill-[#FFBF00]" />
-                  <span>{profile.auraBonus}</span>
-                </div>
-              </div>
             </div>
-
-            {/* Quick Action Bar: Discard vs Match */}
-            <div className="p-3 bg-zinc-100 border-t border-zinc-200 flex items-center justify-between gap-3">
-              <button
-                id="preview-pass-button"
-                onClick={() => handleAction('pass')}
-                className="flex-1 py-2.5 bg-zinc-200 hover:bg-zinc-700 text-white font-black text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
-              >
-                <X className="w-4 h-4" />
-                <span>Pasar</span>
-              </button>
-              <button
-                id="preview-like-button"
-                onClick={() => handleAction('like')}
-                className="flex-1 py-2.5 bg-[#FFBF00] hover:bg-white text-black font-black text-xs uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-colors shadow-md cursor-pointer"
-              >
-                <Heart className="w-4 h-4 fill-black" />
-                <span>Match</span>
-              </button>
+            {/* Carousel Dots */}
+            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
+              {CAROUSEL_IMAGES.map((_, idx) => (
+                <div
+                  key={idx}
+                  className={`w-2 h-2 rounded-full transition-colors ${
+                    idx === currentIndex ? 'bg-[#FFBF00]' : 'bg-zinc-300'
+                  }`}
+                />
+              ))}
             </div>
-
           </div>
 
         </div>
