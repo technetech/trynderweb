@@ -36,7 +36,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
-            className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 mb-6 w-fit tracking-wider shadow-sm"
+            className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 mb-6 w-fit tracking-wider shadow-sm"
           >
             High-Performance Social AI
           </motion.div>
@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
             className="text-5xl sm:text-7xl lg:text-[88px] leading-[0.88] font-black tracking-tighter uppercase mb-6 italic text-black"
           >
             Domina <br />
-            <span className="text-[#FFFF00] not-italic">el Juego.</span>
+            <span className="text-[#FFBF00] not-italic">el Juego.</span>
           </motion.h1>
 
           {/* Editorial Lead Paragraph */}
@@ -72,7 +72,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
             <button
               id="hero-primary-cta"
               onClick={onOpenAppClick}
-              className="bg-[#FFFF00] text-black px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-black uppercase tracking-tighter hover:scale-105 transition-transform shadow-[0_0_30px_rgba(255,255,0,0.35)] cursor-pointer flex items-center gap-3"
+              className="bg-[#FFBF00] text-black px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-black uppercase tracking-tighter hover:scale-105 transition-transform shadow-[0_0_30px_rgba(255,255,0,0.35)] cursor-pointer flex items-center gap-3"
             >
               <span>Entrar a la App</span>
               <ArrowRight className="w-5 h-5" />
@@ -91,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
           {/* User Count & Active Metric */}
           <div className="flex items-center gap-5 pt-6 border-t border-zinc-200/80">
             <div className="flex -space-x-3">
-              <div className="w-10 h-10 rounded-full border-2 border-black bg-zinc-200 flex items-center justify-center text-[10px] font-black text-[#FFFF00]">
+              <div className="w-10 h-10 rounded-full border-2 border-black bg-zinc-200 flex items-center justify-center text-[10px] font-black text-[#FFBF00]">
                 +10k
               </div>
               <div className="w-10 h-10 rounded-full border-2 border-black bg-zinc-700"></div>
@@ -110,7 +110,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
           
           {/* Top Right Metric Badge */}
           <div className="absolute top-6 right-6 sm:top-8 sm:right-8 text-right z-20">
-            <div className="text-4xl sm:text-5xl font-black text-[#FFFF00] tracking-tight">98%</div>
+            <div className="text-4xl sm:text-5xl font-black text-[#FFBF00] tracking-tight">98%</div>
             <div className="text-[9px] sm:text-[10px] font-bold uppercase text-white tracking-tighter leading-tight">
               Tasa de mejora <br /> percibida
             </div>
@@ -129,15 +129,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
             {/* Phone Top Header */}
             <div className="bg-zinc-100 p-4 border-b border-zinc-200 flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#FFFF00] to-white flex items-center justify-center text-white font-black text-xs">
+                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#FFBF00] to-white flex items-center justify-center text-white font-black text-xs">
                   {profile.name[0]}
                 </div>
                 <div>
                   <div className="text-xs font-black text-white uppercase tracking-tight">
                     {profile.name} (Advanced)
                   </div>
-                  <div className="text-[9px] text-[#FFFF00] font-bold tracking-wider uppercase flex items-center gap-1">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#FFFF00] animate-ping" />
+                  <div className="text-[9px] text-[#FFBF00] font-bold tracking-wider uppercase flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FFBF00] animate-ping" />
                     • EN LÍNEA
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
                   {swipeFeedback && (
                     <div className="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-xs z-20">
                       {swipeFeedback === 'like' ? (
-                        <div className="bg-[#FFFF00] text-black px-6 py-2.5 font-black text-xl uppercase tracking-tighter shadow-lg flex items-center gap-2">
+                        <div className="bg-[#FFBF00] text-black px-6 py-2.5 font-black text-xl uppercase tracking-tighter shadow-lg flex items-center gap-2">
                           <Heart className="w-5 h-5 fill-black" />
                           <span>¡MATCH!</span>
                         </div>
@@ -190,7 +190,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
                       <h2 className="text-xl font-black uppercase tracking-tight font-display">
                         {profile.name}, {profile.age}
                       </h2>
-                      <span className="text-[10px] font-bold text-[#FFFF00] uppercase">
+                      <span className="text-[10px] font-bold text-[#FFBF00] uppercase">
                         {profile.archetype}
                       </span>
                     </div>
@@ -203,8 +203,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
 
               {/* Tag Aura */}
               <div className="absolute top-3 left-3 z-10">
-                <div className="px-2 py-0.5 bg-white/80 text-[#FFFF00] text-[10px] font-black uppercase flex items-center gap-1 border border-zinc-200">
-                  <Zap className="w-3 h-3 fill-[#FFFF00]" />
+                <div className="px-2 py-0.5 bg-white/80 text-[#FFBF00] text-[10px] font-black uppercase flex items-center gap-1 border border-zinc-200">
+                  <Zap className="w-3 h-3 fill-[#FFBF00]" />
                   <span>{profile.auraBonus}</span>
                 </div>
               </div>
@@ -223,7 +223,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
               <button
                 id="preview-like-button"
                 onClick={() => handleAction('like')}
-                className="flex-1 py-2.5 bg-[#FFFF00] hover:bg-white text-black font-black text-xs uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-colors shadow-md cursor-pointer"
+                className="flex-1 py-2.5 bg-[#FFBF00] hover:bg-white text-black font-black text-xs uppercase tracking-tighter flex items-center justify-center gap-1.5 transition-colors shadow-md cursor-pointer"
               >
                 <Heart className="w-4 h-4 fill-black" />
                 <span>Match</span>

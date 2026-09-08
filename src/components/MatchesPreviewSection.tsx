@@ -12,7 +12,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
     <section className="py-20 lg:py-28 bg-white relative overflow-hidden border-t border-zinc-200">
       
       {/* Background yellow glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-[#FFFF00]/5 blur-[160px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-[#FFBF00]/5 blur-[160px] rounded-full pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -20,13 +20,13 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
           
           {/* Left: Persuasive Explanation */}
           <div className="lg:col-span-6 space-y-6 text-left">
-            <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+            <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
               Bandeja de Entrada & Multi-Chat
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic leading-tight">
               Aprende a gestionar múltiples conversaciones{' '}
-              <span className="text-[#FFFF00] not-italic">sin quemarte.</span>
+              <span className="text-[#FFBF00] not-italic">sin quemarte.</span>
             </h2>
 
             <p className="text-zinc-700 text-base sm:text-lg leading-relaxed font-medium">
@@ -35,7 +35,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
 
             <div className="space-y-4 pt-2">
               <div className="flex items-start gap-4 bg-[#111111] p-4 border border-zinc-200">
-                <div className="w-8 h-8 bg-[#FFFF00] text-black font-black flex items-center justify-center shrink-0 text-xs">
+                <div className="w-8 h-8 bg-[#FFBF00] text-black font-black flex items-center justify-center shrink-0 text-xs">
                   01
                 </div>
                 <div>
@@ -49,7 +49,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
               </div>
 
               <div className="flex items-start gap-4 bg-[#111111] p-4 border border-zinc-200">
-                <div className="w-8 h-8 bg-[#FFFF00] text-black font-black flex items-center justify-center shrink-0 text-xs">
+                <div className="w-8 h-8 bg-[#FFBF00] text-black font-black flex items-center justify-center shrink-0 text-xs">
                   02
                 </div>
                 <div>
@@ -63,7 +63,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
               </div>
 
               <div className="flex items-start gap-4 bg-[#111111] p-4 border border-zinc-200">
-                <div className="w-8 h-8 bg-[#FFFF00] text-black font-black flex items-center justify-center shrink-0 text-xs">
+                <div className="w-8 h-8 bg-[#FFBF00] text-black font-black flex items-center justify-center shrink-0 text-xs">
                   03
                 </div>
                 <div>
@@ -81,7 +81,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
               <button
                 id="matches-section-cta"
                 onClick={onOpenAppClick}
-                className="bg-[#FFFF00] text-black px-8 py-4 text-sm font-black uppercase tracking-tighter hover:scale-105 transition-transform flex items-center gap-2 cursor-pointer shadow-md"
+                className="bg-[#FFBF00] text-black px-8 py-4 text-sm font-black uppercase tracking-tighter hover:scale-105 transition-transform flex items-center gap-2 cursor-pointer shadow-md"
               >
                 <span>Entrar a mis matches</span>
                 <ArrowRight className="w-4 h-4" />
@@ -97,7 +97,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
               {/* App Header */}
               <div className="flex items-center justify-between pb-4 border-b border-zinc-200">
                 <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFFF00]" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBF00]" />
                   <span className="font-black text-sm tracking-tight text-white font-display uppercase">
                     TRYNDER • BANDEJA
                   </span>
@@ -126,7 +126,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
                         <img
                           src={m.avatar}
                           alt={m.name}
-                          className="w-12 h-12 object-cover border-2 border-[#FFFF00]"
+                          className="w-12 h-12 object-cover border-2 border-[#FFBF00]"
                           referrerPolicy="no-referrer"
                         />
                         <span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-red-600 text-white text-[8px] font-black flex items-center justify-center">
@@ -163,7 +163,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
                   {MATCHES_PREVIEW.map((chat) => (
                     <div
                       key={chat.id}
-                      className="p-2.5 bg-white border border-zinc-200 hover:border-[#FFFF00] transition-colors flex items-start gap-3 cursor-pointer"
+                      className="p-2.5 bg-white border border-zinc-200 hover:border-[#FFBF00] transition-colors flex items-start gap-3 cursor-pointer"
                     >
                       {/* Avatar with online dot */}
                       <div className="relative shrink-0">
@@ -199,7 +199,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
                       {/* Action / Unread Badge */}
                       <div className="shrink-0 flex items-center gap-1 self-center">
                         {chat.unreadCount ? (
-                          <span className="w-4 h-4 bg-[#FFFF00] text-black text-[9px] font-black flex items-center justify-center">
+                          <span className="w-4 h-4 bg-[#FFBF00] text-black text-[9px] font-black flex items-center justify-center">
                             {chat.unreadCount}
                           </span>
                         ) : null}
@@ -217,7 +217,7 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
                 <button
                   id="preview-open-full-chats-cta"
                   onClick={onOpenAppClick}
-                  className="w-full py-3 bg-black text-black hover:bg-[#FFFF00] font-black text-xs uppercase tracking-tighter transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-3 bg-black text-black hover:bg-[#FFBF00] font-black text-xs uppercase tracking-tighter transition-colors flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <span>Abrir Chats en la App</span>
                   <ArrowRight className="w-3.5 h-3.5" />

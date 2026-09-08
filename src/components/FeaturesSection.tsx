@@ -15,12 +15,12 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
         
         {/* Header */}
         <div className="text-left max-w-3xl mb-16 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Entrenamiento de Alto Impacto
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
             Por qué el 94% de los hombres{' '}
-            <span className="text-[#FFFF00] not-italic">multiplica sus resultados</span>
+            <span className="text-[#FFBF00] not-italic">multiplica sus resultados</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg font-medium">
             La mayoría pierde oportunidades por tres errores: sobrepensar, sonar como el promedio o no saber cuándo acelerar la tensión conversacional.
@@ -38,19 +38,19 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: idx * 0.08 }}
-                className="bg-[#111111] border-2 border-zinc-200 hover:border-[#FFFF00] p-8 transition-colors flex flex-col justify-between group"
+                className="bg-[#111111] border-2 border-zinc-200 hover:border-[#FFBF00] p-8 transition-colors flex flex-col justify-between group"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 bg-[#FFFF00] border border-[#FFFF00] flex items-center justify-center text-white transition-colors">
+                    <div className="w-12 h-12 bg-[#FFBF00] border border-[#FFBF00] flex items-center justify-center text-white transition-colors">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <span className="px-2.5 py-1 text-[10px] font-black uppercase tracking-wider bg-[#FFFF00] text-white font-mono-tag border border-transparent">
+                    <span className="px-2.5 py-1 text-[10px] font-black uppercase tracking-wider bg-[#FFBF00] text-white font-mono-tag border border-transparent">
                       {feat.metric}
                     </span>
                   </div>
 
-                  <span className="text-[10px] font-black uppercase text-[#FFFF00] tracking-widest block mb-1">
+                  <span className="text-[10px] font-black uppercase text-[#FFBF00] tracking-widest block mb-1">
                     {feat.tag}
                   </span>
                   <h3 className="text-2xl font-black text-white font-display uppercase tracking-tight mb-2">
@@ -66,7 +66,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
 
                 <div className="pt-6 mt-6 border-t border-zinc-200 flex items-center justify-between text-xs font-black uppercase text-white group-hover:text-white transition-colors">
                   <span>Módulo de Calibración</span>
-                  <span className="text-[#FFFF00]">● Trynder Core</span>
+                  <span className="text-[#FFBF00]">● Trynder Core</span>
                 </div>
               </motion.div>
             );
@@ -116,26 +116,26 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
             </div>
 
             {/* Con Trynder */}
-            <div className="bg-white border-2 border-[#FFFF00] p-6 space-y-4 shadow-[0_0_20px_rgba(255,255,0,0.15)]">
-              <div className="flex items-center gap-2 text-[#FFFF00] font-black text-xs uppercase tracking-wider">
+            <div className="bg-white border-2 border-[#FFBF00] p-6 space-y-4 shadow-[0_0_20px_rgba(255,255,0,0.15)]">
+              <div className="flex items-center gap-2 text-[#FFBF00] font-black text-xs uppercase tracking-wider">
                 <Check className="w-4 h-4 stroke-[3]" />
                 <span>Con Trynder (Mentalidad de Calibración & Aura)</span>
               </div>
               <ul className="space-y-3 text-xs sm:text-sm text-black font-medium">
                 <li className="flex items-start gap-2.5">
-                  <span className="text-[#FFFF00] font-black shrink-0">✓</span>
+                  <span className="text-[#FFBF00] font-black shrink-0">✓</span>
                   <span>Abres con observaciones ingeniosas que provocan curiosidad inmediata y risas.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="text-[#FFFF00] font-black shrink-0">✓</span>
+                  <span className="text-[#FFBF00] font-black shrink-0">✓</span>
                   <span>Respuestas espontáneas en segundos porque tienes los patrones de labia internalizados.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="text-[#FFFF00] font-black shrink-0">✓</span>
+                  <span className="text-[#FFBF00] font-black shrink-0">✓</span>
                   <span>Cometes errores en el simulador y sales al mundo real 100% calibrado y seguro.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="text-[#FFFF00] font-black shrink-0">✓</span>
+                  <span className="text-[#FFBF00] font-black shrink-0">✓</span>
                   <span>Cierras citas de forma natural y magnética, proyectando alto estatus y carisma.</span>
                 </li>
               </ul>
@@ -147,7 +147,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
             <button
               id="comparison-cta-btn"
               onClick={onOpenAppClick}
-              className="bg-[#FFFF00] text-black px-8 py-4 text-xs font-black uppercase tracking-tighter hover:scale-105 transition-transform inline-flex items-center gap-2 cursor-pointer shadow-md"
+              className="bg-[#FFBF00] text-black px-8 py-4 text-xs font-black uppercase tracking-tighter hover:scale-105 transition-transform inline-flex items-center gap-2 cursor-pointer shadow-md"
             >
               <span>Subir de nivel ahora</span>
               <ArrowRight className="w-4 h-4" />

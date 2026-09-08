@@ -24,7 +24,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenAppClick }) => {
             <button
               id="navbar-cta-btn"
               onClick={onOpenAppClick}
-              className="bg-[#FFFF00] text-black px-4 sm:px-6 py-2.5 text-xs font-black uppercase tracking-tighter hover:scale-105 transition-transform flex items-center gap-2 cursor-pointer shadow-[0_0_15px_rgba(255,255,0,0.3)]"
+              className="bg-[#FFBF00] text-black px-4 sm:px-6 py-2.5 text-xs font-black uppercase tracking-tighter hover:scale-105 transition-transform flex items-center gap-2 cursor-pointer shadow-[0_0_15px_rgba(255,255,0,0.3)]"
             >
               <span>Entrar a la App</span>
               <ArrowRight className="w-3.5 h-3.5" />

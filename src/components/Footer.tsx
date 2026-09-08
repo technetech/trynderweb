@@ -24,12 +24,12 @@ export const Footer: React.FC = () => {
             </div>
             <div className="hidden sm:flex flex-col">
               <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest">Latencia IA</span>
-              <span className="text-xs font-black text-[#FFFF00] uppercase tracking-wider">&lt; 140ms</span>
+              <span className="text-xs font-black text-[#FFBF00] uppercase tracking-wider">&lt; 140ms</span>
             </div>
           </div>
 
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-[#FFFF00] animate-pulse"></div>
+            <div className="w-2 h-2 rounded-full bg-[#FFBF00] animate-pulse"></div>
             <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-600">
               Servidores estables
             </span>
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
               El simulador de citas con IA número 1 para hombres. Entrena abridores, respuestas rápidas, calibración social y tensión lúdica en un entorno 100% libre de consecuencias.
             </p>
             <div className="flex items-center gap-2 text-xs text-zinc-500">
-              <Shield className="w-3.5 h-3.5 text-[#FFFF00]" />
+              <Shield className="w-3.5 h-3.5 text-[#FFBF00]" />
               <span className="uppercase text-[10px] font-bold tracking-wider">Privacidad garantizada • Sesiones 100% confidenciales</span>
             </div>
           </div>
@@ -64,7 +64,7 @@ export const Footer: React.FC = () => {
               <li>Sabine, 25 (Yoga / Conexión Emocional)</li>
               <li>Joséphine, 23 (Enfermera / Dinamismo)</li>
               <li>Yaritza, 22 (Enfermera / Coqueteo Exigente)</li>
-              <li className="text-[#FFFF00] font-bold">Pase VIP (Personalidades Semanales)</li>
+              <li className="text-[#FFBF00] font-bold">Pase VIP (Personalidades Semanales)</li>
             </ul>
           </div>
 
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
 
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 text-zinc-700 hover:text-[#FFFF00] transition-colors px-3 py-1.5 bg-zinc-100 border border-zinc-200 text-xs font-black uppercase tracking-wider cursor-pointer"
+            className="flex items-center gap-1.5 text-zinc-700 hover:text-[#FFBF00] transition-colors px-3 py-1.5 bg-zinc-100 border border-zinc-200 text-xs font-black uppercase tracking-wider cursor-pointer"
           >
             <span>Volver arriba</span>
             <ArrowUp className="w-3.5 h-3.5" />

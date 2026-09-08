@@ -42,10 +42,10 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
           initial={{ opacity: 0, scale: 0.95, y: 15 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 15 }}
-          className="relative w-full max-w-lg bg-[#111111] border-2 border-[#FFFF00] p-6 sm:p-8 shadow-[0_0_50px_rgba(255,255,0,0.25)] z-10 overflow-hidden text-white"
+          className="relative w-full max-w-lg bg-[#111111] border-2 border-[#FFBF00] p-6 sm:p-8 shadow-[0_0_50px_rgba(255,255,0,0.25)] z-10 overflow-hidden text-white"
         >
           {/* Background Glow */}
-          <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFFF00]/10 blur-3xl rounded-full pointer-events-none" />
+          <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFBF00]/10 blur-3xl rounded-full pointer-events-none" />
 
           {/* Close button */}
           <button
@@ -57,7 +57,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
 
           {!submitted ? (
             <div className="space-y-6">
-              <div className="inline-block bg-[#FFFF00] text-black text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
+              <div className="inline-block bg-[#FFBF00] text-black text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
                 Acceso a la WebApp // Trynder
               </div>
 
@@ -76,10 +76,10 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                   onClose();
                   onStartSimulation();
                 }}
-                className="w-full py-3.5 px-4 bg-transparent border border-zinc-700 hover:border-[#FFFF00] text-white hover:text-white font-black text-xs uppercase tracking-wider flex items-center justify-between transition-colors"
+                className="w-full py-3.5 px-4 bg-transparent border border-zinc-700 hover:border-[#FFBF00] text-white hover:text-white font-black text-xs uppercase tracking-wider flex items-center justify-between transition-colors"
               >
                 <div className="flex items-center gap-2">
-                  <Zap className="w-4 h-4 text-[#FFFF00] fill-[#FFFF00]" />
+                  <Zap className="w-4 h-4 text-[#FFBF00] fill-[#FFBF00]" />
                   <span>Ir directo al simulador interactivo</span>
                 </div>
                 <ArrowRight className="w-4 h-4 text-white" />
@@ -101,13 +101,13 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Tu correo electrónico..."
-                  className="w-full bg-transparent border border-zinc-700 focus:border-[#FFFF00] px-4 py-3.5 text-xs sm:text-sm text-white placeholder-zinc-500 focus:outline-none transition-colors"
+                  className="w-full bg-transparent border border-zinc-700 focus:border-[#FFBF00] px-4 py-3.5 text-xs sm:text-sm text-white placeholder-zinc-500 focus:outline-none transition-colors"
                 />
 
                 {/* Primary Button */}
                 <button
                   type="submit"
-                  className="w-full py-4 px-6 font-black uppercase text-xs sm:text-sm tracking-tighter text-black bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                  className="w-full py-4 px-6 font-black uppercase text-xs sm:text-sm tracking-tighter text-black bg-[#FFBF00] hover:scale-102 transition-transform flex items-center justify-center gap-2 cursor-pointer shadow-md"
                 >
                   <span>Entrar a Trynder</span>
                   <ArrowRight className="w-4 h-4" />
@@ -120,7 +120,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
             </div>
           ) : (
             <div className="text-center py-6 space-y-4">
-              <div className="w-14 h-14 bg-[#FFFF00] text-black mx-auto flex items-center justify-center shadow-[0_0_30px_rgba(255,255,0,0.3)]">
+              <div className="w-14 h-14 bg-[#FFBF00] text-black mx-auto flex items-center justify-center shadow-[0_0_30px_rgba(255,255,0,0.3)]">
                 <CheckCircle2 className="w-8 h-8 stroke-[2.5]" />
               </div>
 
@@ -138,7 +138,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                     onClose();
                     onStartSimulation();
                   }}
-                  className="w-full py-3.5 px-6 font-black uppercase text-xs tracking-wider text-black bg-[#FFFF00] hover:scale-102 transition-transform shadow-md cursor-pointer"
+                  className="w-full py-3.5 px-6 font-black uppercase text-xs tracking-wider text-black bg-[#FFBF00] hover:scale-102 transition-transform shadow-md cursor-pointer"
                 >
                   Ir al Simulador en Vivo Ahora
                 </button>

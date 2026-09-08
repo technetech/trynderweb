@@ -38,11 +38,11 @@ export const HowItWorks: React.FC<HowItWorksProps> = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-left max-w-3xl mb-16 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Metodología de Entrenamiento
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
-            De dudar al escribir a conversar con <span className="text-[#FFFF00] not-italic">aura dominante</span>
+            De dudar al escribir a conversar con <span className="text-[#FFBF00] not-italic">aura dominante</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg font-medium">
             Un sistema de 4 fases rigurosamente diseñado para que construyas agilidad social sin quemar oportunidades reales.
@@ -57,11 +57,11 @@ export const HowItWorks: React.FC<HowItWorksProps> = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: idx * 0.08 }}
-              className="bg-[#111111] border-r border-b border-zinc-200 hover:border-[#FFFF00] p-6 sm:p-8 transition-colors flex flex-col justify-between"
+              className="bg-[#111111] border-r border-b border-zinc-200 hover:border-[#FFBF00] p-6 sm:p-8 transition-colors flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-6">
-                  <span className="text-4xl font-black text-[#FFFF00] font-display">
+                  <span className="text-4xl font-black text-[#FFBF00] font-display">
                     {s.num}
                   </span>
                   <span className="text-[9px] font-black uppercase tracking-widest px-2 py-0.5 bg-transparent text-white border border-zinc-200">
@@ -78,7 +78,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = () => {
               </div>
 
               <div className="mt-8 pt-4 border-t border-zinc-200 flex items-center gap-2 text-[10px] font-black uppercase tracking-wider text-white">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FFFF00]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#FFBF00]" />
                 <span>Simulación activa</span>
               </div>
             </motion.div>

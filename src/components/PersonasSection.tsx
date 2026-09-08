@@ -12,18 +12,18 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
     <section id="perfiles" className="py-20 lg:py-32 bg-white relative border-t border-zinc-200">
       
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-[#FFFF00]/5 blur-[150px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-[#FFBF00]/5 blur-[150px] rounded-full pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-left max-w-3xl mb-16 space-y-4">
-          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Lookbook de Arquetipos
           </div>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
             Cada mujer es un reto diferente.{' '}
-            <span className="text-[#FFFF00] not-italic">Aprende a calibrar.</span>
+            <span className="text-[#FFBF00] not-italic">Aprende a calibrar.</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg font-medium">
             En el mundo real no puedes usar la misma frase con una abogada analítica que con una chica bohemia. En Trynder entrenas con personalidades calibradas para templar tu marco social.
@@ -39,7 +39,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.08 }}
-              className="group bg-[#111111] border-2 border-zinc-200 hover:border-[#FFFF00] overflow-hidden flex flex-col transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,255,0,0.15)]"
+              className="group bg-[#111111] border-2 border-zinc-200 hover:border-[#FFBF00] overflow-hidden flex flex-col transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,255,0,0.15)]"
             >
               {/* Card Image Header */}
               <div className="relative aspect-[4/5] overflow-hidden bg-white">
@@ -60,7 +60,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
                       persona.difficulty === 'Modo Desafío'
                         ? 'bg-red-500 text-black'
                         : persona.difficulty === 'Avanzado'
-                        ? 'bg-[#FFFF00] text-black'
+                        ? 'bg-[#FFBF00] text-black'
                         : 'bg-transparent text-white border border-zinc-200'
                     }`}
                   >
@@ -70,8 +70,8 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
 
                 {/* Aura indicator */}
                 <div className="absolute top-3 right-3">
-                  <span className="px-2 py-0.5 text-[10px] font-black bg-white text-[#FFFF00] border border-zinc-200 flex items-center gap-1">
-                    <Zap className="w-3 h-3 fill-[#FFFF00]" />
+                  <span className="px-2 py-0.5 text-[10px] font-black bg-white text-[#FFBF00] border border-zinc-200 flex items-center gap-1">
+                    <Zap className="w-3 h-3 fill-[#FFBF00]" />
                     {persona.auraBonus}
                   </span>
                 </div>
@@ -90,7 +90,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
               {/* Card Body */}
               <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
                 <div className="space-y-3">
-                  <p className="text-[11px] font-black text-[#FFFF00] uppercase tracking-wider">
+                  <p className="text-[11px] font-black text-[#FFBF00] uppercase tracking-wider">
                     {persona.archetype}
                   </p>
                   <p className="text-xs text-white line-clamp-2 leading-relaxed font-medium">
@@ -124,7 +124,7 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
                 <button
                   id={`chat-with-${persona.id}`}
                   onClick={onOpenAppClick}
-                  className="w-full py-2.5 px-4 text-xs font-black uppercase tracking-tighter text-black bg-[#FFFF00] hover:scale-102 transition-transform flex items-center justify-center gap-1.5 cursor-pointer"
+                  className="w-full py-2.5 px-4 text-xs font-black uppercase tracking-tighter text-black bg-[#FFBF00] hover:scale-102 transition-transform flex items-center justify-center gap-1.5 cursor-pointer"
                 >
                   <Heart className="w-3.5 h-3.5 fill-black" />
                   <span>Chatear con {persona.name}</span>

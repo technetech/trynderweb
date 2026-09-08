@@ -10,7 +10,7 @@ export const FaqSection: React.FC = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-left mb-12 space-y-3">
-          <div className="inline-block bg-[#FFFF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
+          <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             FAQ // Consultas
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-black font-display uppercase italic">
@@ -24,7 +24,7 @@ export const FaqSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-[#111111] border-2 border-zinc-800 hover:border-[#FFFF00] transition-colors"
+                className="bg-[#111111] border-2 border-zinc-800 hover:border-[#FFBF00] transition-colors"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
@@ -32,7 +32,7 @@ export const FaqSection: React.FC = () => {
                 >
                   <span className="tracking-tight">{faq.q}</span>
                   <ChevronDown
-                    className={`w-4 h-4 text-[#FFFF00] transition-transform duration-200 shrink-0 ${
+                    className={`w-4 h-4 text-[#FFBF00] transition-transform duration-200 shrink-0 ${
                       isOpen ? 'rotate-180' : ''
                     }`}
                   />
