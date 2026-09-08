@@ -9,7 +9,7 @@ interface FeaturesSectionProps {
 
 export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick }) => {
   return (
-    <section id="beneficios" className="py-20 lg:py-32 bg-white relative border-t border-zinc-200">
+    <section id="beneficios" className="py-20 lg:py-32 bg-transparent relative border-t border-zinc-200">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         

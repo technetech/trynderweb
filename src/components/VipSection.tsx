@@ -7,7 +7,7 @@ interface VipSectionProps {
 
 export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
   return (
-    <section className="py-20 lg:py-28 bg-white relative border-t border-zinc-200">
+    <section className="py-20 lg:py-28 bg-transparent relative border-t border-zinc-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-left max-w-3xl mb-16 space-y-4">

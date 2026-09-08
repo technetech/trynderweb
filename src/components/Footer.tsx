@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-white border-t border-zinc-200 text-zinc-600 text-sm">
+    <footer className="bg-transparent border-t border-zinc-200 text-zinc-600 text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Editorial Status Bar (as in theme preview) */}

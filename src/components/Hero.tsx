@@ -25,7 +25,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-white border-b border-zinc-200">
+    <section className="relative overflow-hidden bg-transparent border-b border-zinc-200">
       
       {/* Editorial Grid Layout */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-0">
@@ -108,7 +108,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
         </div>
 
         {/* Right Column: Editorial Stage & Interactive Phone Frame */}
-        <div className="lg:col-span-5 relative bg-gradient-to-t from-white via-white to-[#FFBF00]/30 border-t lg:border-t-0 lg:border-l border-zinc-200 flex flex-col items-center justify-center p-6 sm:p-12 overflow-hidden min-h-[620px]">
+        <div className="lg:col-span-5 relative bg-transparent border-t lg:border-t-0 lg:border-l border-zinc-200 flex flex-col items-center justify-center p-6 sm:p-12 overflow-hidden min-h-[620px]">
           
           {/* Top Right Metric Badge */}
           <div className="absolute top-6 right-6 sm:top-8 sm:right-8 text-right z-20">

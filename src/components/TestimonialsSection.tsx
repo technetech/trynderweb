@@ -9,7 +9,7 @@ interface TestimonialsSectionProps {
 
 export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
   return (
-    <section id="testimonios" className="py-20 lg:py-32 bg-white relative border-t border-zinc-200">
+    <section id="testimonios" className="py-20 lg:py-32 bg-transparent relative border-t border-zinc-200">
       
       {/* Background glow */}
       <div className="absolute top-1/2 right-10 w-[450px] h-[450px] bg-[#FFBF00]/5 blur-[160px] rounded-full pointer-events-none -z-10" />

@@ -6,7 +6,7 @@ export const FaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-20 bg-white relative border-t border-zinc-200">
+    <section className="py-20 bg-transparent relative border-t border-zinc-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-left mb-12 space-y-3">

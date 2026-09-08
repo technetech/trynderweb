@@ -27,7 +27,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-black flex flex-col selection:bg-[#FFBF00] selection:text-black font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-[#FFBF00]/20 via-white to-white bg-fixed text-black flex flex-col selection:bg-[#FFBF00] selection:text-black font-sans">
       {/* Navigation Bar */}
       <Navbar onOpenAppClick={handleOpenApp} />
 

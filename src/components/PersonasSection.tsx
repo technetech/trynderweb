@@ -9,7 +9,7 @@ interface PersonasSectionProps {
 
 export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick }) => {
   return (
-    <section id="perfiles" className="py-20 lg:py-32 bg-white relative border-t border-zinc-200">
+    <section id="perfiles" className="py-20 lg:py-32 bg-transparent relative border-t border-zinc-200">
       
       {/* Background ambient lighting */}
       <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-[#FFBF00]/5 blur-[150px] rounded-full pointer-events-none -z-10" />

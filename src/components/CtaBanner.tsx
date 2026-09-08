@@ -7,7 +7,7 @@ interface CtaBannerProps {
 
 export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenAppClick }) => {
   return (
-    <section className="py-24 lg:py-36 bg-white relative overflow-hidden border-t border-zinc-200">
+    <section className="py-24 lg:py-36 bg-transparent relative overflow-hidden border-t border-zinc-200">
       
       {/* Background radial yellow burst */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[#FFBF00]/10 blur-[180px] rounded-full pointer-events-none -z-10" />

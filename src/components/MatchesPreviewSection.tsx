@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle, Lock, Trash2, ArrowRight } from 'lucide-react';
-import { MATCHES_PREVIEW } from '../data/mockData';
+import chatPreviewUrl from '../assets/chat-preview.jpg';
 
 interface MatchesPreviewSectionProps {
   onOpenAppClick: () => void;
@@ -9,7 +9,7 @@ interface MatchesPreviewSectionProps {
 
 export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ onOpenAppClick }) => {
   return (
-    <section className="py-20 lg:py-28 bg-white relative overflow-hidden border-t border-zinc-200">
+    <section className="py-20 lg:py-28 bg-transparent relative overflow-hidden border-t border-zinc-200">
       
       {/* Background yellow glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[350px] bg-[#FFBF00]/5 blur-[160px] rounded-full pointer-events-none -z-10" />
@@ -90,142 +90,14 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
           </div>
 
           {/* Right: Faithfully Recreated Matches UI with Editorial Framing */}
-          <div className="lg:col-span-6 flex justify-center">
-            
-            <div className="w-full max-w-[420px] bg-[#111111] text-white border-2 border-zinc-200 p-5 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9),0_0_25px_rgba(255,255,0,0.15)]">
-              
-              {/* App Header */}
-              <div className="flex items-center justify-between pb-4 border-b border-zinc-200">
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBF00]" />
-                  <span className="font-black text-sm tracking-tight text-white font-display uppercase">
-                    TRYNDER • BANDEJA
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 text-[9px] font-black uppercase bg-[#8b5cf6] text-white">
-                    VIP
-                  </span>
-                  <div className="px-2 py-0.5 text-[9px] font-black uppercase border border-zinc-700 text-white bg-transparent">
-                    Salir
-                  </div>
-                </div>
-              </div>
-
-              {/* Conexiones Row (Avatars + Locks) */}
-              <div className="py-4 border-b border-zinc-200">
-                <h4 className="text-[10px] font-black uppercase tracking-widest text-white mb-3">
-                  Conexiones Activas
-                </h4>
-                
-                <div className="flex items-center gap-2.5 overflow-x-auto pb-2 scrollbar-none">
-                  {MATCHES_PREVIEW.map((m) => (
-                    <div key={m.id} className="flex flex-col items-center shrink-0 relative group">
-                      <div className="relative">
-                        <img
-                          src={m.avatar}
-                          alt={m.name}
-                          className="w-12 h-12 object-cover border-2 border-[#FFBF00]"
-                          referrerPolicy="no-referrer"
-                        />
-                        <span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-red-600 text-white text-[8px] font-black flex items-center justify-center">
-                          ✕
-                        </span>
-                      </div>
-                      <span className="text-[10px] font-black uppercase tracking-wider text-white mt-1">
-                        {m.name}
-                      </span>
-                    </div>
-                  ))}
-
-                  {/* Lock slots from screenshot */}
-                  {[1, 2, 3].map((slot) => (
-                    <div key={slot} className="flex flex-col items-center shrink-0">
-                      <div className="w-12 h-12 border border-dashed border-zinc-700 flex items-center justify-center text-white bg-transparent">
-                        <Lock className="w-3.5 h-3.5" />
-                      </div>
-                      <span className="text-[9px] font-black uppercase text-white mt-1">
-                        FREE
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Chats List */}
-              <div className="pt-3">
-                <h4 className="text-[10px] font-black uppercase tracking-widest text-white mb-3">
-                  Conversaciones Abiertas
-                </h4>
-
-                <div className="space-y-2">
-                  {MATCHES_PREVIEW.map((chat) => (
-                    <div
-                      key={chat.id}
-                      className="p-2.5 bg-white border border-zinc-200 hover:border-[#FFBF00] transition-colors flex items-start gap-3 cursor-pointer"
-                    >
-                      {/* Avatar with online dot */}
-                      <div className="relative shrink-0">
-                        <img
-                          src={chat.avatar}
-                          alt={chat.name}
-                          className="w-10 h-10 object-cover border border-zinc-700"
-                          referrerPolicy="no-referrer"
-                        />
-                        {chat.online && (
-                          <span className="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-emerald-500" />
-                        )}
-                      </div>
-
-                      {/* Content */}
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-1.5">
-                            <span className="font-black text-xs uppercase text-white">
-                              {chat.name}
-                            </span>
-                          </div>
-                          <span className="text-[9px] text-white font-mono-tag">
-                            {chat.time}
-                          </span>
-                        </div>
-
-                        <p className="text-xs text-white truncate mt-0.5 font-medium">
-                          {chat.lastMessage}
-                        </p>
-                      </div>
-
-                      {/* Action / Unread Badge */}
-                      <div className="shrink-0 flex items-center gap-1 self-center">
-                        {chat.unreadCount ? (
-                          <span className="w-4 h-4 bg-[#FFBF00] text-black text-[9px] font-black flex items-center justify-center">
-                            {chat.unreadCount}
-                          </span>
-                        ) : null}
-                        <div className="p-1 text-white hover:text-red-500">
-                          <Trash2 className="w-3.5 h-3.5" />
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Bottom bar CTA */}
-              <div className="text-center pt-4">
-                <button
-                  id="preview-open-full-chats-cta"
-                  onClick={onOpenAppClick}
-                  className="w-full py-3 bg-black text-black hover:bg-[#FFBF00] font-black text-xs uppercase tracking-tighter transition-colors flex items-center justify-center gap-2 cursor-pointer"
-                >
-                  <span>Abrir Chats en la App</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
-              </div>
-
+          <div className="lg:col-span-6 flex justify-center relative">
+            <div className="w-full max-w-[340px] relative">
+              <img
+                src={chatPreviewUrl}
+                alt="Chat Preview"
+                className="w-full h-auto rounded-[32px] border-[6px] border-zinc-200 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_35px_rgba(255,191,0,0.4)]"
+              />
             </div>
-
           </div>
 
         </div>

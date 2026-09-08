@@ -162,7 +162,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
   };
 
   return (
-    <section id="simulador" className="py-20 lg:py-28 bg-white relative border-t border-zinc-200">
+    <section id="simulador" className="py-20 lg:py-28 bg-transparent relative border-t border-zinc-200">
       
       {/* Subtle background aura glow */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[600px] bg-[#FFBF00]/5 blur-[160px] rounded-full pointer-events-none -z-10" />
