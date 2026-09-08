@@ -41,8 +41,8 @@ export const HowItWorks: React.FC<HowItWorksProps> = () => {
           <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Metodología de Entrenamiento
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
-            De dudar al escribir a conversar con <span className="text-[#FFBF00] not-italic">aura dominante</span>
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase ">
+            De dudar al escribir a conversar con <span className="text-[#FFBF00] ">aura dominante</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg font-medium">
             Un sistema de 4 fases rigurosamente diseñado para que construyas agilidad social sin quemar oportunidades reales.

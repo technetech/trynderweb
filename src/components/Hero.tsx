@@ -48,10 +48,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
-            className="text-5xl sm:text-7xl lg:text-[88px] leading-[0.88] font-black tracking-tighter uppercase mb-6 italic text-black"
+            className="text-5xl sm:text-7xl lg:text-[88px] leading-[0.88] font-black tracking-tighter uppercase mb-6 text-black font-display"
           >
             Domina <br />
-            <span className="text-[#FFBF00] not-italic">el Juego.</span>
+            <span className="text-[#FFBF00]">el Juego.</span>
           </motion.h1>
 
           {/* Editorial Lead Paragraph */}
@@ -118,12 +118,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppClick, onExploreDemoClick }
             </div>
           </div>
 
-          {/* Subdued Editorial Watermark */}
-          <div className="absolute bottom-10 left-[-40px] rotate-90 hidden sm:block pointer-events-none select-none">
-            <span className="text-[60px] font-black text-black opacity-5 tracking-tighter">
-              CONVERSATION
-            </span>
-          </div>
+
 
           {/* Image Carousel */}
           <div className="w-[310px] sm:w-[380px] relative overflow-hidden rounded-[20px] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_35px_rgba(255,191,0,0.4)] z-10 flex flex-col bg-white">

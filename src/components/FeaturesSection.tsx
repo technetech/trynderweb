@@ -18,9 +18,9 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
           <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Entrenamiento de Alto Impacto
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase ">
             Por qué el 94% de los hombres{' '}
-            <span className="text-[#FFBF00] not-italic">multiplica sus resultados</span>
+            <span className="text-[#FFBF00] ">multiplica sus resultados</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg font-medium">
             La mayoría pierde oportunidades por tres errores: sobrepensar, sonar como el promedio o no saber cuándo acelerar la tensión conversacional.
@@ -79,7 +79,7 @@ export const FeaturesSection: React.FC<FeaturesSectionProps> = ({ onOpenAppClick
             <div className="inline-block bg-black text-white text-[9px] font-black uppercase px-2 py-0.5 tracking-wider">
               Diagnóstico Comparativo
             </div>
-            <h3 className="text-2xl sm:text-3xl font-black text-white font-display uppercase italic">
+            <h3 className="text-2xl sm:text-3xl font-black text-white font-display uppercase ">
               La diferencia entre improvisar y entrenar
             </h3>
             <p className="text-xs sm:text-sm text-white font-medium">

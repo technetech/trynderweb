@@ -20,9 +20,9 @@ export const TestimonialsSection: React.FC<TestimonialsSectionProps> = () => {
           <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Casos de Estudio
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase ">
             Hombres reales.{' '}
-            <span className="text-[#FFBF00] not-italic">Conversaciones que cierran citas.</span>
+            <span className="text-[#FFBF00] ">Conversaciones que cierran citas.</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg font-medium">
             Descubre cómo pasaron del ghosting permanente a tener control e impacto real en sus interacciones.

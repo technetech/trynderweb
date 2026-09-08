@@ -62,7 +62,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
               </div>
 
               <div>
-                <h3 className="text-2xl sm:text-3xl font-black text-white font-display uppercase tracking-tight italic">
+                <h3 className="text-2xl sm:text-3xl font-black text-white font-display uppercase tracking-tight ">
                   Estás a un paso de dominar la conversación
                 </h3>
                 <p className="text-xs sm:text-sm text-white mt-2 leading-relaxed font-medium">
@@ -124,7 +124,7 @@ export const EnterAppModal: React.FC<EnterAppModalProps> = ({
                 <CheckCircle2 className="w-8 h-8 stroke-[2.5]" />
               </div>
 
-              <h3 className="text-2xl font-black text-white font-display uppercase italic">
+              <h3 className="text-2xl font-black text-white font-display uppercase ">
                 ¡Pase VIP Activado!
               </h3>
               

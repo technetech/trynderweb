@@ -14,9 +14,9 @@ export const VipSection: React.FC<VipSectionProps> = ({ onOpenAppClick }) => {
           <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Membresía & Pases
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase ">
             Acceso sin restricciones.{' '}
-            <span className="text-[#FFBF00] not-italic">Calibración Total.</span>
+            <span className="text-[#FFBF00] ">Calibración Total.</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg font-medium">
             Comienza gratis hoy y desbloquea el pase VIP cuando quieras llevar tu temple conversacional a la élite.

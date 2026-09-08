@@ -24,9 +24,9 @@ export const MatchesPreviewSection: React.FC<MatchesPreviewSectionProps> = ({ on
               Bandeja de Entrada & Multi-Chat
             </div>
 
-            <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tighter text-black font-display uppercase leading-tight">
               Aprende a gestionar múltiples conversaciones{' '}
-              <span className="text-[#FFBF00] not-italic">sin quemarte.</span>
+              <span className="text-[#FFBF00]">sin quemarte.</span>
             </h2>
 
             <p className="text-zinc-700 text-base sm:text-lg leading-relaxed font-medium">

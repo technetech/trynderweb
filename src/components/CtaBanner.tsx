@@ -21,9 +21,9 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({ onOpenAppClick }) => {
             Tu Aura Empieza Aquí
           </div>
 
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white font-display uppercase tracking-tight leading-[1.1] mb-6 italic">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white font-display uppercase tracking-tight leading-[1.1] mb-6 ">
             Deja de sobrepensar.{' '}
-            <span className="text-[#FFBF00] not-italic block mt-1">
+            <span className="text-[#FFBF00] block mt-1">
               Empieza a dominar la conversación.
             </span>
           </h2>

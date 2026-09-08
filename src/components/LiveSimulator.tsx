@@ -174,7 +174,7 @@ export const LiveSimulator: React.FC<LiveSimulatorProps> = ({ onOpenAppClick }) 
           <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Laboratorio de Conversación en Vivo
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase ">
             Pon a prueba tu labia en el simulador
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg">

@@ -21,9 +21,9 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
           <div className="inline-block bg-[#FFBF00] text-black text-[10px] font-black uppercase px-2.5 py-1 tracking-wider">
             Lookbook de Arquetipos
           </div>
-          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase italic">
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-black font-display uppercase ">
             Cada mujer es un reto diferente.{' '}
-            <span className="text-[#FFBF00] not-italic">Aprende a calibrar.</span>
+            <span className="text-[#FFBF00] ">Aprende a calibrar.</span>
           </h2>
           <p className="text-zinc-600 text-base sm:text-lg font-medium">
             En el mundo real no puedes usar la misma frase con una abogada analítica que con una chica bohemia. En Trynder entrenas con personalidades calibradas para templar tu marco social.
@@ -112,10 +112,10 @@ export const PersonasSection: React.FC<PersonasSectionProps> = ({ onOpenAppClick
 
                 {/* Card Sample Chat Pill */}
                 <div className="bg-white border border-zinc-200 p-3 space-y-1">
-                  <div className="text-[9px] uppercase font-black tracking-widest text-white">
+                  <div className="text-[9px] uppercase font-black tracking-widest text-zinc-500">
                     Banter de prueba:
                   </div>
-                  <p className="text-xs text-white italic line-clamp-2 font-medium">
+                  <p className="text-xs text-black italic line-clamp-2 font-medium">
                     "{persona.chatSnippet.ai}"
                   </p>
                 </div>
